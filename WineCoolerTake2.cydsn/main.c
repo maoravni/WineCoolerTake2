@@ -101,14 +101,22 @@ int monitorState = M_STATE_SLEEP;
 
 void readAndDisplayTemperature()
 {
-        if (OneWire_DataReady) // DS18 completed temperature measurement - begin read dataa
-    	{   
-            OneWire_ReadTemperature();
+    static int firstRead = 1;
+    
+    if (OneWire_DataReady) // DS18 completed temperature measurement - begin read dataa
+	{   
+        OneWire_ReadTemperature();
+        if (firstRead)
+        {
+            g_temperature = OneWire_GetTemperatureAsFloat(0);
+            firstRead = 0;
+        }
+        else
             g_temperature = lowPassFilter(OneWire_GetTemperatureAsFloat(0), g_temperature);
-            LED_Driver_Write7SegNumberDec((int)(g_temperature*100), 0, 4, 0);
-            LED_Driver_PutDecimalPoint(1, 1);
-            OneWire_SendTemperatureRequest();
-        }    
+        LED_Driver_Write7SegNumberDec((int)(g_temperature*100), 0, 4, 0);
+        LED_Driver_PutDecimalPoint(1, 1);
+        OneWire_SendTemperatureRequest();
+    }    
     if (msecCounter < PwmPeriodArray[monitorState])
         LED_Driver_PutDecimalPoint(1, 3);
     else

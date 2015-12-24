@@ -78,9 +78,6 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_1_BOOT.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Clock_UART.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Clock_UART.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_2_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_2.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_2.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OneWire_ControlReg_DRV.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OneWire_ControlReg_DRV.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OneWire_ControlReg_DRV_PM.c</File>
@@ -147,6 +144,12 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\TimerInterrupt.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Clock1kHz.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Clock1kHz.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\PinVdd_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\PinVdd.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\PinVdd.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\PinGnd_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\PinGnd.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\PinGnd.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\maor\Documents\GitHub\WineCoolerTake2\WineCoolerTake2.cydsn\Export\ARM_GCC_Generic">

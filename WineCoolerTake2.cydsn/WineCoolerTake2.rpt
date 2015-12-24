@@ -1,13 +1,13 @@
-Loading plugins phase: Elapsed time ==> 2s.036ms
+Loading plugins phase: Elapsed time ==> 1s.887ms
 Initializing data phase: Elapsed time ==> 0s.000ms
 <CYPRESSTAG name="CyDsfit arguments...">
 cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p C:\Users\maor\Documents\GitHub\WineCoolerTake2\WineCoolerTake2.cydsn\WineCoolerTake2.cyprj -d CY8C5888LTI-LP097 -s C:\Users\maor\Documents\GitHub\WineCoolerTake2\WineCoolerTake2.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE</CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 5s.937ms
+Elaboration phase: Elapsed time ==> 6s.164ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.184ms
+HDL generation phase: Elapsed time ==> 0s.200ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -41,7 +41,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\maor\
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Thu Dec 24 07:57:42 2015
+Thu Dec 24 08:47:33 2015
 
 
 ======================================================================
@@ -51,7 +51,7 @@ Options  :    -yv2 -q10 WineCoolerTake2.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Thu Dec 24 07:57:42 2015
+Thu Dec 24 08:47:34 2015
 
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyControlReg_v1_80\CyControlReg_v1_80.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\cypress.v'
@@ -66,11 +66,11 @@ Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\ps
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\B_UART_v2_50\B_UART_v2_50.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\cypress.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_vref_v1_60\cy_vref_v1_60.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\bLED_PWM_v1_10\bLED_PWM_v1_10.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\cypress.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\xor_v1_0\xor_v1_0.v'
-Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_vref_v1_60\cy_vref_v1_60.v'
 
 vpp:  No errors.
 
@@ -112,7 +112,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\maor\
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Thu Dec 24 07:57:42 2015
+Thu Dec 24 08:47:34 2015
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -135,10 +135,10 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\conte
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\OneTerminal\OneTerminal.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\B_UART_v2_50\B_UART_v2_50.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_vref_v1_60\cy_vref_v1_60.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\bLED_PWM_v1_10\bLED_PWM_v1_10.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\xor_v1_0\xor_v1_0.v'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_vref_v1_60\cy_vref_v1_60.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3pkg.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\lcpsoc3\stdlogic\mod_cnst.vif'.
@@ -153,7 +153,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\maor\
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Thu Dec 24 07:57:44 2015
+Thu Dec 24 08:47:36 2015
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -176,10 +176,10 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\conte
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\OneTerminal\OneTerminal.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\B_UART_v2_50\B_UART_v2_50.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_vref_v1_60\cy_vref_v1_60.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\bLED_PWM_v1_10\bLED_PWM_v1_10.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\xor_v1_0\xor_v1_0.v'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_vref_v1_60\cy_vref_v1_60.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3pkg.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\lcpsoc3\stdlogic\mod_cnst.vif'.
@@ -450,6 +450,7 @@ Aliasing \UART_1:BUART:tx_status_6\ to \OneWire:ControlReg_DRV:clk\
 Aliasing \UART_1:BUART:tx_status_5\ to \OneWire:ControlReg_DRV:clk\
 Aliasing \UART_1:BUART:tx_status_4\ to \OneWire:ControlReg_DRV:clk\
 Aliasing tmpOE__Tx_06_net_0 to one
+Aliasing tmpOE__PinVdd_net_0 to one
 Aliasing tmpOE__Seg_net_7 to one
 Aliasing tmpOE__Seg_net_6 to one
 Aliasing tmpOE__Seg_net_5 to one
@@ -490,7 +491,7 @@ Aliasing \LED_Driver:Seg_Driver_L:clk\ to \OneWire:ControlReg_DRV:clk\
 Aliasing \LED_Driver:Seg_Driver_L:rst\ to \OneWire:ControlReg_DRV:clk\
 Aliasing \LED_Driver:Com_Driver:clk\ to \OneWire:ControlReg_DRV:clk\
 Aliasing \LED_Driver:Com_Driver:rst\ to \OneWire:ControlReg_DRV:clk\
-Aliasing tmpOE__Pin_2_net_0 to one
+Aliasing tmpOE__PinGnd_net_0 to one
 Aliasing tmpOE__SsrOut_net_0 to one
 Aliasing \OneWire:TimerDelay:TimerUDB:capture_last\\D\ to \OneWire:ControlReg_DRV:clk\
 Aliasing \OneWire:TimerDelay:TimerUDB:capture_out_reg_i\\D\ to \OneWire:TimerDelay:TimerUDB:capt_fifo_load_int\
@@ -560,18 +561,18 @@ Removing Lhs of wire tmpOE__Com_net_3[269] = one[58]
 Removing Lhs of wire tmpOE__Com_net_2[270] = one[58]
 Removing Lhs of wire tmpOE__Com_net_1[271] = one[58]
 Removing Lhs of wire tmpOE__Com_net_0[272] = one[58]
-Removing Rhs of wire Net_2204_3[273] = \LED_Driver:common_3\[760]
-Removing Rhs of wire Net_2204_3[273] = \LED_Driver:Com_Driver:control_out_3\[761]
-Removing Rhs of wire Net_2204_3[273] = \LED_Driver:Com_Driver:control_3\[773]
-Removing Rhs of wire Net_2204_2[274] = \LED_Driver:common_2\[762]
-Removing Rhs of wire Net_2204_2[274] = \LED_Driver:Com_Driver:control_out_2\[763]
-Removing Rhs of wire Net_2204_2[274] = \LED_Driver:Com_Driver:control_2\[774]
-Removing Rhs of wire Net_2204_1[275] = \LED_Driver:common_1\[764]
-Removing Rhs of wire Net_2204_1[275] = \LED_Driver:Com_Driver:control_out_1\[765]
-Removing Rhs of wire Net_2204_1[275] = \LED_Driver:Com_Driver:control_1\[775]
-Removing Rhs of wire Net_2204_0[276] = \LED_Driver:common_0\[766]
-Removing Rhs of wire Net_2204_0[276] = \LED_Driver:Com_Driver:control_out_0\[767]
-Removing Rhs of wire Net_2204_0[276] = \LED_Driver:Com_Driver:control_0\[776]
+Removing Rhs of wire Net_2204_3[273] = \LED_Driver:common_3\[768]
+Removing Rhs of wire Net_2204_3[273] = \LED_Driver:Com_Driver:control_out_3\[769]
+Removing Rhs of wire Net_2204_3[273] = \LED_Driver:Com_Driver:control_3\[781]
+Removing Rhs of wire Net_2204_2[274] = \LED_Driver:common_2\[770]
+Removing Rhs of wire Net_2204_2[274] = \LED_Driver:Com_Driver:control_out_2\[771]
+Removing Rhs of wire Net_2204_2[274] = \LED_Driver:Com_Driver:control_2\[782]
+Removing Rhs of wire Net_2204_1[275] = \LED_Driver:common_1\[772]
+Removing Rhs of wire Net_2204_1[275] = \LED_Driver:Com_Driver:control_out_1\[773]
+Removing Rhs of wire Net_2204_1[275] = \LED_Driver:Com_Driver:control_1\[783]
+Removing Rhs of wire Net_2204_0[276] = \LED_Driver:common_0\[774]
+Removing Rhs of wire Net_2204_0[276] = \LED_Driver:Com_Driver:control_out_0\[775]
+Removing Rhs of wire Net_2204_0[276] = \LED_Driver:Com_Driver:control_0\[784]
 Removing Lhs of wire tmpOE__PinLED_net_0[288] = one[58]
 Removing Rhs of wire Net_44[295] = \UART_1:BUART:tx_interrupt_out\[314]
 Removing Lhs of wire \UART_1:Net_61\[296] = Net_42[297]
@@ -588,106 +589,107 @@ Removing Lhs of wire \UART_1:BUART:tx_status_4\[368] = zero[49]
 Removing Lhs of wire \UART_1:BUART:tx_status_1\[370] = \UART_1:BUART:tx_fifo_empty\[333]
 Removing Lhs of wire \UART_1:BUART:tx_status_3\[372] = \UART_1:BUART:tx_fifo_notfull\[332]
 Removing Lhs of wire tmpOE__Tx_06_net_0[380] = one[58]
-Removing Lhs of wire tmpOE__Seg_net_7[410] = one[58]
-Removing Lhs of wire tmpOE__Seg_net_6[411] = one[58]
-Removing Lhs of wire tmpOE__Seg_net_5[412] = one[58]
-Removing Lhs of wire tmpOE__Seg_net_4[413] = one[58]
-Removing Lhs of wire tmpOE__Seg_net_3[414] = one[58]
-Removing Lhs of wire tmpOE__Seg_net_2[415] = one[58]
-Removing Lhs of wire tmpOE__Seg_net_1[416] = one[58]
-Removing Lhs of wire tmpOE__Seg_net_0[417] = one[58]
-Removing Rhs of wire Net_2203_7[418] = \LED_Driver:segments_7\[725]
-Removing Rhs of wire Net_2203_7[418] = \LED_Driver:Seg_Driver_L:control_out_7\[726]
-Removing Rhs of wire Net_2203_7[418] = \LED_Driver:Seg_Driver_L:control_7\[742]
-Removing Rhs of wire Net_2203_6[419] = \LED_Driver:segments_6\[727]
-Removing Rhs of wire Net_2203_6[419] = \LED_Driver:Seg_Driver_L:control_out_6\[728]
-Removing Rhs of wire Net_2203_6[419] = \LED_Driver:Seg_Driver_L:control_6\[743]
-Removing Rhs of wire Net_2203_5[420] = \LED_Driver:segments_5\[729]
-Removing Rhs of wire Net_2203_5[420] = \LED_Driver:Seg_Driver_L:control_out_5\[730]
-Removing Rhs of wire Net_2203_5[420] = \LED_Driver:Seg_Driver_L:control_5\[744]
-Removing Rhs of wire Net_2203_4[421] = \LED_Driver:segments_4\[731]
-Removing Rhs of wire Net_2203_4[421] = \LED_Driver:Seg_Driver_L:control_out_4\[732]
-Removing Rhs of wire Net_2203_4[421] = \LED_Driver:Seg_Driver_L:control_4\[745]
-Removing Rhs of wire Net_2203_3[422] = \LED_Driver:segments_3\[733]
-Removing Rhs of wire Net_2203_3[422] = \LED_Driver:Seg_Driver_L:control_out_3\[734]
-Removing Rhs of wire Net_2203_3[422] = \LED_Driver:Seg_Driver_L:control_3\[746]
-Removing Rhs of wire Net_2203_2[423] = \LED_Driver:segments_2\[735]
-Removing Rhs of wire Net_2203_2[423] = \LED_Driver:Seg_Driver_L:control_out_2\[736]
-Removing Rhs of wire Net_2203_2[423] = \LED_Driver:Seg_Driver_L:control_2\[747]
-Removing Rhs of wire Net_2203_1[424] = \LED_Driver:segments_1\[737]
-Removing Rhs of wire Net_2203_1[424] = \LED_Driver:Seg_Driver_L:control_out_1\[738]
-Removing Rhs of wire Net_2203_1[424] = \LED_Driver:Seg_Driver_L:control_1\[748]
-Removing Rhs of wire Net_2203_0[425] = \LED_Driver:segments_0\[739]
-Removing Rhs of wire Net_2203_0[425] = \LED_Driver:Seg_Driver_L:control_out_0\[740]
-Removing Rhs of wire Net_2203_0[425] = \LED_Driver:Seg_Driver_L:control_0\[749]
-Removing Lhs of wire \LED_Driver:Net_855\[446] = \LED_Driver:Net_1501\[445]
-Removing Lhs of wire \LED_Driver:bLED_PWM:cnt_enable\[458] = \LED_Driver:bLED_PWM:ctrl_0\[457]
-Removing Lhs of wire \LED_Driver:bLED_PWM:cmp_vi_vv_MODGEN_1\[465] = \LED_Driver:bLED_PWM:MODULE_1:g2:a0:lta_0\[519]
-Removing Lhs of wire \LED_Driver:bLED_PWM:add_vi_vv_MODGEN_2_1\[466] = \LED_Driver:bLED_PWM:MODULE_2:g2:a0:s_1\[679]
-Removing Lhs of wire \LED_Driver:bLED_PWM:add_vi_vv_MODGEN_2_0\[468] = \LED_Driver:bLED_PWM:MODULE_2:g2:a0:s_0\[680]
-Removing Lhs of wire \LED_Driver:bLED_PWM:PwmDP:cs_addr_2\[472] = zero[49]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_1:aa_1\[503] = \LED_Driver:bLED_PWM:MODIN1_1\[504]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODIN1_1\[504] = \LED_Driver:bLED_PWM:init_cnt_1\[464]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_1:aa_0\[505] = \LED_Driver:bLED_PWM:MODIN1_0\[506]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODIN1_0\[506] = \LED_Driver:bLED_PWM:init_cnt_0\[467]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_1:bb_1\[507] = one[58]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_1:bb_0\[508] = zero[49]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_1:g2:a0:newa_1\[509] = \LED_Driver:bLED_PWM:init_cnt_1\[464]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_1:g2:a0:newa_0\[510] = \LED_Driver:bLED_PWM:init_cnt_0\[467]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_1:g2:a0:newb_1\[511] = one[58]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_1:g2:a0:newb_0\[512] = zero[49]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_1:g2:a0:dataa_1\[513] = \LED_Driver:bLED_PWM:init_cnt_1\[464]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_1:g2:a0:dataa_0\[514] = \LED_Driver:bLED_PWM:init_cnt_0\[467]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_1:g2:a0:datab_1\[515] = one[58]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_1:g2:a0:datab_0\[516] = zero[49]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_23\[561] = zero[49]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_22\[562] = zero[49]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_21\[563] = zero[49]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_20\[564] = zero[49]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_19\[565] = zero[49]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_18\[566] = zero[49]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_17\[567] = zero[49]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_16\[568] = zero[49]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_15\[569] = zero[49]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_14\[570] = zero[49]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_13\[571] = zero[49]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_12\[572] = zero[49]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_11\[573] = zero[49]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_10\[574] = zero[49]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_9\[575] = zero[49]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_8\[576] = zero[49]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_7\[577] = zero[49]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_6\[578] = zero[49]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_5\[579] = zero[49]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_4\[580] = zero[49]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_3\[581] = zero[49]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_2\[582] = zero[49]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_1\[583] = \LED_Driver:bLED_PWM:init_cnt_1\[464]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODIN2_1\[584] = \LED_Driver:bLED_PWM:init_cnt_1\[464]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_0\[585] = \LED_Driver:bLED_PWM:init_cnt_0\[467]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODIN2_0\[586] = \LED_Driver:bLED_PWM:init_cnt_0\[467]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_0\[718] = one[58]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:g1:z1:s0:g1:u0:b_0\[719] = one[58]
-Removing Lhs of wire \LED_Driver:trigDMA\[720] = \LED_Driver:Net_856\[459]
-Removing Lhs of wire \LED_Driver:Seg_Driver_L:clk\[723] = zero[49]
-Removing Lhs of wire \LED_Driver:Seg_Driver_L:rst\[724] = zero[49]
-Removing Lhs of wire \LED_Driver:Com_Driver:clk\[750] = zero[49]
-Removing Lhs of wire \LED_Driver:Com_Driver:rst\[751] = zero[49]
-Removing Lhs of wire \LED_Driver:Net_1418\[781] = \LED_Driver:Net_856\[459]
-Removing Lhs of wire \LED_Driver:Net_1416\[785] = \LED_Driver:tc\[463]
-Removing Lhs of wire tmpOE__Pin_2_net_0[829] = one[58]
-Removing Lhs of wire tmpOE__SsrOut_net_0[835] = one[58]
-Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:capture_last\\D\[844] = zero[49]
-Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:hwEnable_reg\\D\[845] = \OneWire:TimerDelay:TimerUDB:control_7\[63]
-Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:tc_reg_i\\D\[846] = \OneWire:TimerDelay:TimerUDB:status_tc\[85]
-Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:capture_out_reg_i\\D\[847] = \OneWire:TimerDelay:TimerUDB:capt_fifo_load\[81]
-Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:trig_last\\D\[850] = \OneWire:Net_527\[97]
-Removing Lhs of wire \UART_1:BUART:reset_reg\\D\[853] = zero[49]
-Removing Lhs of wire Net_41D[858] = zero[49]
-Removing Lhs of wire \LED_Driver:bLED_PWM:cnt_state_1\\D\[868] = \LED_Driver:tc\\D\[865]
+Removing Lhs of wire tmpOE__PinVdd_net_0[389] = one[58]
+Removing Lhs of wire tmpOE__Seg_net_7[418] = one[58]
+Removing Lhs of wire tmpOE__Seg_net_6[419] = one[58]
+Removing Lhs of wire tmpOE__Seg_net_5[420] = one[58]
+Removing Lhs of wire tmpOE__Seg_net_4[421] = one[58]
+Removing Lhs of wire tmpOE__Seg_net_3[422] = one[58]
+Removing Lhs of wire tmpOE__Seg_net_2[423] = one[58]
+Removing Lhs of wire tmpOE__Seg_net_1[424] = one[58]
+Removing Lhs of wire tmpOE__Seg_net_0[425] = one[58]
+Removing Rhs of wire Net_2203_7[426] = \LED_Driver:segments_7\[733]
+Removing Rhs of wire Net_2203_7[426] = \LED_Driver:Seg_Driver_L:control_out_7\[734]
+Removing Rhs of wire Net_2203_7[426] = \LED_Driver:Seg_Driver_L:control_7\[750]
+Removing Rhs of wire Net_2203_6[427] = \LED_Driver:segments_6\[735]
+Removing Rhs of wire Net_2203_6[427] = \LED_Driver:Seg_Driver_L:control_out_6\[736]
+Removing Rhs of wire Net_2203_6[427] = \LED_Driver:Seg_Driver_L:control_6\[751]
+Removing Rhs of wire Net_2203_5[428] = \LED_Driver:segments_5\[737]
+Removing Rhs of wire Net_2203_5[428] = \LED_Driver:Seg_Driver_L:control_out_5\[738]
+Removing Rhs of wire Net_2203_5[428] = \LED_Driver:Seg_Driver_L:control_5\[752]
+Removing Rhs of wire Net_2203_4[429] = \LED_Driver:segments_4\[739]
+Removing Rhs of wire Net_2203_4[429] = \LED_Driver:Seg_Driver_L:control_out_4\[740]
+Removing Rhs of wire Net_2203_4[429] = \LED_Driver:Seg_Driver_L:control_4\[753]
+Removing Rhs of wire Net_2203_3[430] = \LED_Driver:segments_3\[741]
+Removing Rhs of wire Net_2203_3[430] = \LED_Driver:Seg_Driver_L:control_out_3\[742]
+Removing Rhs of wire Net_2203_3[430] = \LED_Driver:Seg_Driver_L:control_3\[754]
+Removing Rhs of wire Net_2203_2[431] = \LED_Driver:segments_2\[743]
+Removing Rhs of wire Net_2203_2[431] = \LED_Driver:Seg_Driver_L:control_out_2\[744]
+Removing Rhs of wire Net_2203_2[431] = \LED_Driver:Seg_Driver_L:control_2\[755]
+Removing Rhs of wire Net_2203_1[432] = \LED_Driver:segments_1\[745]
+Removing Rhs of wire Net_2203_1[432] = \LED_Driver:Seg_Driver_L:control_out_1\[746]
+Removing Rhs of wire Net_2203_1[432] = \LED_Driver:Seg_Driver_L:control_1\[756]
+Removing Rhs of wire Net_2203_0[433] = \LED_Driver:segments_0\[747]
+Removing Rhs of wire Net_2203_0[433] = \LED_Driver:Seg_Driver_L:control_out_0\[748]
+Removing Rhs of wire Net_2203_0[433] = \LED_Driver:Seg_Driver_L:control_0\[757]
+Removing Lhs of wire \LED_Driver:Net_855\[454] = \LED_Driver:Net_1501\[453]
+Removing Lhs of wire \LED_Driver:bLED_PWM:cnt_enable\[466] = \LED_Driver:bLED_PWM:ctrl_0\[465]
+Removing Lhs of wire \LED_Driver:bLED_PWM:cmp_vi_vv_MODGEN_1\[473] = \LED_Driver:bLED_PWM:MODULE_1:g2:a0:lta_0\[527]
+Removing Lhs of wire \LED_Driver:bLED_PWM:add_vi_vv_MODGEN_2_1\[474] = \LED_Driver:bLED_PWM:MODULE_2:g2:a0:s_1\[687]
+Removing Lhs of wire \LED_Driver:bLED_PWM:add_vi_vv_MODGEN_2_0\[476] = \LED_Driver:bLED_PWM:MODULE_2:g2:a0:s_0\[688]
+Removing Lhs of wire \LED_Driver:bLED_PWM:PwmDP:cs_addr_2\[480] = zero[49]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_1:aa_1\[511] = \LED_Driver:bLED_PWM:MODIN1_1\[512]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODIN1_1\[512] = \LED_Driver:bLED_PWM:init_cnt_1\[472]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_1:aa_0\[513] = \LED_Driver:bLED_PWM:MODIN1_0\[514]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODIN1_0\[514] = \LED_Driver:bLED_PWM:init_cnt_0\[475]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_1:bb_1\[515] = one[58]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_1:bb_0\[516] = zero[49]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_1:g2:a0:newa_1\[517] = \LED_Driver:bLED_PWM:init_cnt_1\[472]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_1:g2:a0:newa_0\[518] = \LED_Driver:bLED_PWM:init_cnt_0\[475]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_1:g2:a0:newb_1\[519] = one[58]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_1:g2:a0:newb_0\[520] = zero[49]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_1:g2:a0:dataa_1\[521] = \LED_Driver:bLED_PWM:init_cnt_1\[472]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_1:g2:a0:dataa_0\[522] = \LED_Driver:bLED_PWM:init_cnt_0\[475]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_1:g2:a0:datab_1\[523] = one[58]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_1:g2:a0:datab_0\[524] = zero[49]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_23\[569] = zero[49]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_22\[570] = zero[49]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_21\[571] = zero[49]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_20\[572] = zero[49]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_19\[573] = zero[49]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_18\[574] = zero[49]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_17\[575] = zero[49]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_16\[576] = zero[49]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_15\[577] = zero[49]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_14\[578] = zero[49]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_13\[579] = zero[49]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_12\[580] = zero[49]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_11\[581] = zero[49]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_10\[582] = zero[49]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_9\[583] = zero[49]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_8\[584] = zero[49]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_7\[585] = zero[49]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_6\[586] = zero[49]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_5\[587] = zero[49]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_4\[588] = zero[49]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_3\[589] = zero[49]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_2\[590] = zero[49]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_1\[591] = \LED_Driver:bLED_PWM:init_cnt_1\[472]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODIN2_1\[592] = \LED_Driver:bLED_PWM:init_cnt_1\[472]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:a_0\[593] = \LED_Driver:bLED_PWM:init_cnt_0\[475]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODIN2_0\[594] = \LED_Driver:bLED_PWM:init_cnt_0\[475]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_0\[726] = one[58]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:g1:z1:s0:g1:u0:b_0\[727] = one[58]
+Removing Lhs of wire \LED_Driver:trigDMA\[728] = \LED_Driver:Net_856\[467]
+Removing Lhs of wire \LED_Driver:Seg_Driver_L:clk\[731] = zero[49]
+Removing Lhs of wire \LED_Driver:Seg_Driver_L:rst\[732] = zero[49]
+Removing Lhs of wire \LED_Driver:Com_Driver:clk\[758] = zero[49]
+Removing Lhs of wire \LED_Driver:Com_Driver:rst\[759] = zero[49]
+Removing Lhs of wire \LED_Driver:Net_1418\[789] = \LED_Driver:Net_856\[467]
+Removing Lhs of wire \LED_Driver:Net_1416\[793] = \LED_Driver:tc\[471]
+Removing Lhs of wire tmpOE__PinGnd_net_0[837] = one[58]
+Removing Lhs of wire tmpOE__SsrOut_net_0[843] = one[58]
+Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:capture_last\\D\[852] = zero[49]
+Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:hwEnable_reg\\D\[853] = \OneWire:TimerDelay:TimerUDB:control_7\[63]
+Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:tc_reg_i\\D\[854] = \OneWire:TimerDelay:TimerUDB:status_tc\[85]
+Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:capture_out_reg_i\\D\[855] = \OneWire:TimerDelay:TimerUDB:capt_fifo_load\[81]
+Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:trig_last\\D\[858] = \OneWire:Net_527\[97]
+Removing Lhs of wire \UART_1:BUART:reset_reg\\D\[861] = zero[49]
+Removing Lhs of wire Net_41D[866] = zero[49]
+Removing Lhs of wire \LED_Driver:bLED_PWM:cnt_state_1\\D\[876] = \LED_Driver:tc\\D\[873]
 
 ------------------------------------------------------
-Aliased 0 equations, 189 wires.
+Aliased 0 equations, 190 wires.
 ------------------------------------------------------
 
 ----------------------------------------------------------
@@ -831,10 +833,10 @@ Aliasing \LED_Driver:bLED_PWM:MODULE_2:g2:a0:g1:z1:s0:g1:u0:b_24\ to zero
 Aliasing \LED_Driver:bLED_PWM:MODULE_2:g2:a0:g1:z1:s0:g1:u0:b_16\ to zero
 Aliasing \LED_Driver:bLED_PWM:MODULE_2:g2:a0:g1:z1:s0:g1:u0:b_8\ to zero
 Removing Lhs of wire \OneWire:TimerDelay:TimerUDB:capt_fifo_load\[81] = zero[49]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:g1:z1:s0:g1:u0:b_24\[689] = zero[49]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:g1:z1:s0:g1:u0:b_16\[699] = zero[49]
-Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:g1:z1:s0:g1:u0:b_8\[709] = zero[49]
-Removing Lhs of wire \UART_1:BUART:tx_ctrl_mark_last\\D\[860] = \UART_1:BUART:tx_ctrl_mark_last\[376]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:g1:z1:s0:g1:u0:b_24\[697] = zero[49]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:g1:z1:s0:g1:u0:b_16\[707] = zero[49]
+Removing Lhs of wire \LED_Driver:bLED_PWM:MODULE_2:g2:a0:g1:z1:s0:g1:u0:b_8\[717] = zero[49]
+Removing Lhs of wire \UART_1:BUART:tx_ctrl_mark_last\\D\[868] = \UART_1:BUART:tx_ctrl_mark_last\[376]
 
 ------------------------------------------------------
 Aliased 0 equations, 5 wires.
@@ -867,14 +869,14 @@ CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\wa
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\bin/warp.exe
 Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\maor\Documents\GitHub\WineCoolerTake2\WineCoolerTake2.cydsn\WineCoolerTake2.cyprj -dcpsoc3 WineCoolerTake2.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 3s.035ms
+Warp synthesis phase: Elapsed time ==> 3s.404ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V3.3.0.410, Family: PSoC3, Started at: Thursday, 24 December 2015 07:57:45
+cyp3fit: V3.3.0.410, Family: PSoC3, Started at: Thursday, 24 December 2015 08:47:37
 Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\maor\Documents\GitHub\WineCoolerTake2\WineCoolerTake2.cydsn\WineCoolerTake2.cyprj -d CY8C5888LTI-LP097 WineCoolerTake2.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 0s.049ms
+Design parsing phase: Elapsed time ==> 0s.068ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
@@ -913,7 +915,7 @@ Done removing unused cells.
         EnableIn: Constant 1 was determined to be synchronous to ClockIn
         ClockOut: LED_Driver_ClkInternal, EnableOut: Constant 1
 </CYPRESSTAG>
-ADD: pft.M0040: information: The following 2 pin(s) will be assigned a location by the fitter: SsrOut(0), Tx_06(0)
+ADD: pft.M0040: information: The following 1 pin(s) will be assigned a location by the fitter: Tx_06(0)
 
 
 Removing unused cells resulting from optimization
@@ -1267,6 +1269,46 @@ Design Equations
             input => Net_39 ,
             pad => Tx_06(0)_PAD );
 
+    Pin : Name = PinVdd(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: AUTO
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_ANALOG
+            VTrip: EITHER
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: True
+            Can contain Digital: False
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilitites: ANALOG
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => PinVdd(0)__PA ,
+            analog_term => Net_2222 ,
+            pad => PinVdd(0)_PAD );
+        Properties:
+        {
+        }
+
     Pin : Name = Seg(0)
         Attributes:
             In Group/Port: True
@@ -1587,7 +1629,7 @@ Design Equations
         {
         }
 
-    Pin : Name = Pin_2(0)
+    Pin : Name = PinGnd(0)
         Attributes:
             In Group/Port: True
             In Sync Option: AUTO
@@ -1620,9 +1662,9 @@ Design Equations
             Initial Value: 0
             IO Voltage: 0
         PORT MAP (
-            pa_out => Pin_2(0)__PA ,
+            pa_out => PinGnd(0)__PA ,
             analog_term => Net_2215 ,
-            pad => Pin_2(0)_PAD );
+            pad => PinGnd(0)_PAD );
         Properties:
         {
         }
@@ -1662,6 +1704,9 @@ Design Equations
         PORT MAP (
             pa_out => SsrOut(0)__PA ,
             pad => SsrOut(0)_PAD );
+        Properties:
+        {
+        }
     </CYPRESSTAG>
     <CYPRESSTAG name="Macrocell listing" icon="FILE_RPT_EQUATION">
 
@@ -2540,7 +2585,7 @@ Analog Clocks                 :    0 :    4 :    4 :  0.00 %
 CapSense Buffers              :    0 :    2 :    2 :  0.00 %
 Digital Filter Block          :    0 :    1 :    1 :  0.00 %
 Interrupts                    :    3 :   29 :   32 :  9.38 %
-IO                            :   20 :   28 :   48 : 41.67 %
+IO                            :   21 :   27 :   48 : 43.75 %
 Segment LCD                   :    0 :    1 :    1 :  0.00 %
 CAN 2.0b                      :    0 :    1 :    1 :  0.00 %
 I2C                           :    0 :    1 :    1 :  0.00 %
@@ -2566,8 +2611,8 @@ Analog (SC/CT) Blocks         :    0 :    4 :    4 :  0.00 %
 DAC                           :      :      :      :        
   VIDAC                       :    0 :    4 :    4 :  0.00 %
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.147ms
-Tech mapping phase: Elapsed time ==> 0s.400ms
+Technology Mapping: Elapsed time ==> 0s.227ms
+Tech mapping phase: Elapsed time ==> 0s.455ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 Initial Analog Placement Results:
@@ -2575,9 +2620,10 @@ IO_0@[IOP=(12)][IoId=(0)] : Com(0) (fixed)
 IO_3@[IOP=(12)][IoId=(3)] : Com(1) (fixed)
 IO_4@[IOP=(12)][IoId=(4)] : Com(2) (fixed)
 IO_0@[IOP=(0)][IoId=(0)] : Com(3) (fixed)
+IO_6@[IOP=(2)][IoId=(6)] : PinGnd(0) (fixed)
 IO_1@[IOP=(2)][IoId=(1)] : PinLED(0) (fixed)
-IO_7@[IOP=(1)][IoId=(7)] : Pin_0(0) (fixed)
-IO_7@[IOP=(2)][IoId=(7)] : Pin_2(0) (fixed)
+IO_4@[IOP=(2)][IoId=(4)] : PinVdd(0) (fixed)
+IO_5@[IOP=(2)][IoId=(5)] : Pin_0(0) (fixed)
 IO_1@[IOP=(12)][IoId=(1)] : Seg(0) (fixed)
 IO_5@[IOP=(12)][IoId=(5)] : Seg(1) (fixed)
 IO_4@[IOP=(15)][IoId=(4)] : Seg(2) (fixed)
@@ -2586,15 +2632,18 @@ IO_1@[IOP=(15)][IoId=(1)] : Seg(4) (fixed)
 IO_2@[IOP=(12)][IoId=(2)] : Seg(5) (fixed)
 IO_5@[IOP=(15)][IoId=(5)] : Seg(6) (fixed)
 IO_3@[IOP=(15)][IoId=(3)] : Seg(7) (fixed)
+IO_7@[IOP=(1)][IoId=(7)] : SsrOut(0) (fixed)
 Vref[6]@[FFB(Vref,6)] : vRef_1
+Vref[8]@[FFB(Vref,8)] : vRef_2
 Analog Placement Results:
 IO_0@[IOP=(12)][IoId=(0)] : Com(0) (fixed)
 IO_3@[IOP=(12)][IoId=(3)] : Com(1) (fixed)
 IO_4@[IOP=(12)][IoId=(4)] : Com(2) (fixed)
 IO_0@[IOP=(0)][IoId=(0)] : Com(3) (fixed)
+IO_6@[IOP=(2)][IoId=(6)] : PinGnd(0) (fixed)
 IO_1@[IOP=(2)][IoId=(1)] : PinLED(0) (fixed)
-IO_7@[IOP=(1)][IoId=(7)] : Pin_0(0) (fixed)
-IO_7@[IOP=(2)][IoId=(7)] : Pin_2(0) (fixed)
+IO_4@[IOP=(2)][IoId=(4)] : PinVdd(0) (fixed)
+IO_5@[IOP=(2)][IoId=(5)] : Pin_0(0) (fixed)
 IO_1@[IOP=(12)][IoId=(1)] : Seg(0) (fixed)
 IO_5@[IOP=(12)][IoId=(5)] : Seg(1) (fixed)
 IO_4@[IOP=(15)][IoId=(4)] : Seg(2) (fixed)
@@ -2603,12 +2652,16 @@ IO_1@[IOP=(15)][IoId=(1)] : Seg(4) (fixed)
 IO_2@[IOP=(12)][IoId=(2)] : Seg(5) (fixed)
 IO_5@[IOP=(15)][IoId=(5)] : Seg(6) (fixed)
 IO_3@[IOP=(15)][IoId=(3)] : Seg(7) (fixed)
+IO_7@[IOP=(1)][IoId=(7)] : SsrOut(0) (fixed)
 Vref[6]@[FFB(Vref,6)] : vRef_1
+Vref[8]@[FFB(Vref,8)] : vRef_2
 
-Analog Placement phase: Elapsed time ==> 0s.131ms
+Analog Placement phase: Elapsed time ==> 0s.123ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
-Analog Routing phase: Elapsed time ==> 0s.017ms
+Net "Net_2215" overuses wire "dsm0+ Wire"
+Net "Net_2222" overuses wire "dsm0+ Wire"
+Analog Routing phase: Elapsed time ==> 0s.029ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Code Generation">
 ============ Analog Final Answer Routes ============
@@ -2619,10 +2672,21 @@ Map of net to items {
     dsm_0_vplus_vssa
     dsm_0_vplus_x_dsm_0_vplus_vssa
     dsm_0_vplus
-    agl3_x_dsm_0_vplus
+    agl2_x_dsm_0_vplus
+    agl2
+    agl2_x_p2_6
+    p2_6
+  }
+  Net: Net_2222 {
+    pin_vddd
+    agl3_x_pin_vddd
     agl3
-    agl3_x_p2_7
-    p2_7
+    agl3_x_p6_7
+    p6_7
+    amuxbusl_x_p6_7
+    amuxbusl
+    amuxbusl_x_p2_4
+    p2_4
   }
 }
 Map of item to net {
@@ -2630,10 +2694,19 @@ Map of item to net {
   dsm_0_vplus_vssa                                 -> Net_2215
   dsm_0_vplus_x_dsm_0_vplus_vssa                   -> Net_2215
   dsm_0_vplus                                      -> Net_2215
-  agl3_x_dsm_0_vplus                               -> Net_2215
-  agl3                                             -> Net_2215
-  agl3_x_p2_7                                      -> Net_2215
-  p2_7                                             -> Net_2215
+  agl2_x_dsm_0_vplus                               -> Net_2215
+  agl2                                             -> Net_2215
+  agl2_x_p2_6                                      -> Net_2215
+  p2_6                                             -> Net_2215
+  pin_vddd                                         -> Net_2222
+  agl3_x_pin_vddd                                  -> Net_2222
+  agl3                                             -> Net_2222
+  agl3_x_p6_7                                      -> Net_2222
+  p6_7                                             -> Net_2222
+  amuxbusl_x_p6_7                                  -> Net_2222
+  amuxbusl                                         -> Net_2222
+  amuxbusl_x_p2_4                                  -> Net_2222
+  p2_4                                             -> Net_2222
 }
 Mux Info {
 }
@@ -2641,7 +2714,7 @@ Dump of CyP35AnalogRoutingResultsDB
 IsVddaHalfUsedForComp = False
 IsVddaHalfUsedForSar0 = False
 IsVddaHalfUsedForSar1 = False
-Analog Code Generation phase: Elapsed time ==> 1s.346ms
+Analog Code Generation phase: Elapsed time ==> 1s.417ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
@@ -2656,15 +2729,15 @@ PLD Packing Summary
 ------------------------------------------------------------
             Resource Type : Used : Free :  Max :  % Used
     ====================================================
-                     PLDs :   17 :   31 :   48 :  35.42%
+                     PLDs :   16 :   32 :   48 :  33.33%
 
 <CYPRESSTAG name="PLD Statistics">
 
         PLD Resource Type :     Average/LAB
     =======================================
-                   Inputs :            5.35
-                   Pterms :            2.88
-               Macrocells :            1.53
+                   Inputs :            5.31
+                   Pterms :            3.06
+               Macrocells :            1.63
 </CYPRESSTAG>
 <CYPRESSTAG name="Packed PLD Contents">
 Packed PLD Contents not displayed at this verbose level.</CYPRESSTAG>
@@ -2682,7 +2755,7 @@ Partitioning: Elapsed time ==> 0s.184ms
 Annealing: Elapsed time ==> 0s.000ms
 <CYPRESSTAG name="Simulated Annealing Results">
 The seed used for moves was 114161200.
-Inital cost was 429, final cost is 429 (0.00% improvement).</CYPRESSTAG>
+Inital cost was 451, final cost is 451 (0.00% improvement).</CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Final Placement Summary">
 
@@ -2692,7 +2765,7 @@ Final Placement Summary
 
        Resource Type :      Count : Avg Inputs : Avg Outputs
     ========================================================
-                 UDB :          9 :       6.33 :       2.89
+                 UDB :          9 :       6.22 :       2.89
 <CYPRESSTAG name="Final Placement Details">
 <CYPRESSTAG name="Component Details">
 
@@ -2700,318 +2773,25 @@ Final Placement Summary
 Component Placement Details
 ------------------------------------------------------------
 UDB [UDB=(0,0)] is empty.
-UDB [UDB=(0,1)] contents:
-LAB@[UDB=(0,1)][LB=0] #macrocells=1, #inputs=0, #pterms=0
-{
-    [McSlotId=0]: (empty)
-    [McSlotId=1]: (empty)
-    [McSlotId=2]:     MacroCell: Name=__ONE__, Mode=(Combinatorial) @ [UDB=(0,1)][LB=0][MC=2]
-        Total # of inputs        : 0
-        Total # of product terms : 0
-            Clock Enable: True
-        Main Equation            : 0 pterms
-        !(
-            0
-        );
-        Output = __ONE__ (fanout=7)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=3]: (empty)
-}
-
+UDB [UDB=(0,1)] is empty.
 UDB [UDB=(0,2)] is empty.
 UDB [UDB=(0,3)] is empty.
-UDB [UDB=(0,4)] is empty.
-UDB [UDB=(0,5)] is empty.
-UDB [UDB=(1,0)] is empty.
-UDB [UDB=(1,1)] is empty.
-UDB [UDB=(1,2)] is empty.
-UDB [UDB=(1,3)] is empty.
-UDB [UDB=(1,4)] is empty.
-UDB [UDB=(1,5)] is empty.
-UDB [UDB=(2,0)] contents:
-LAB@[UDB=(2,0)][LB=0] #macrocells=1, #inputs=6, #pterms=4
+UDB [UDB=(0,4)] contents:
+LAB@[UDB=(0,4)][LB=1] #macrocells=1, #inputs=4, #pterms=1
 {
     [McSlotId=0]: (empty)
-    [McSlotId=1]: (empty)
-    [McSlotId=2]:     MacroCell: Name=\UART_1:BUART:tx_state_2\, Mode=(T-Register) @ [UDB=(2,0)][LB=0][MC=2]
-        Total # of inputs        : 6
-        Total # of product terms : 4
-        List of special equations: 
-            Clock  = (Net_42) => Global
-            Clock Enable: True
-        Main Equation            : 4 pterms
-        (
-              !\UART_1:BUART:tx_state_1\ * !\UART_1:BUART:tx_state_0\ * 
-              \UART_1:BUART:tx_bitclk_enable_pre\ * \UART_1:BUART:tx_state_2\
-            + \UART_1:BUART:tx_state_1\ * \UART_1:BUART:tx_state_0\ * 
-              \UART_1:BUART:tx_bitclk_enable_pre\ * \UART_1:BUART:tx_state_2\
-            + \UART_1:BUART:tx_state_1\ * \UART_1:BUART:tx_state_0\ * 
-              !\UART_1:BUART:tx_state_2\ * \UART_1:BUART:tx_bitclk\
-            + \UART_1:BUART:tx_state_1\ * !\UART_1:BUART:tx_state_2\ * 
-              \UART_1:BUART:tx_counter_dp\ * \UART_1:BUART:tx_bitclk\
-        );
-        Output = \UART_1:BUART:tx_state_2\ (fanout=7)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=3]: (empty)
-}
-
-LAB@[UDB=(2,0)][LB=1] #macrocells=1, #inputs=4, #pterms=2
-{
-    [McSlotId=0]: (empty)
-    [McSlotId=1]:     MacroCell: Name=\UART_1:BUART:counter_load_not\, Mode=(Combinatorial) @ [UDB=(2,0)][LB=1][MC=1]
+    [McSlotId=1]:     MacroCell: Name=\OneWire:TimerDelay:TimerUDB:status_tc\, Mode=(Combinatorial) @ [UDB=(0,4)][LB=1][MC=1]
         Total # of inputs        : 4
-        Total # of product terms : 2
-            Clock Enable: True
-        Main Equation            : 2 pterms
-        !(
-              !\UART_1:BUART:tx_state_1\ * !\UART_1:BUART:tx_state_0\ * 
-              \UART_1:BUART:tx_bitclk_enable_pre\
-            + !\UART_1:BUART:tx_state_1\ * !\UART_1:BUART:tx_state_0\ * 
-              !\UART_1:BUART:tx_state_2\
-        );
-        Output = \UART_1:BUART:counter_load_not\ (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=2]: (empty)
-    [McSlotId=3]: (empty)
-}
-
-datapathcell: Name =\UART_1:BUART:sTX:sCLOCK:TxBitClkGen\
-    PORT MAP (
-        clock => Net_42 ,
-        cs_addr_0 => \UART_1:BUART:counter_load_not\ ,
-        ce0_reg => \UART_1:BUART:tx_bitclk_enable_pre\ ,
-        ce1_reg => \UART_1:BUART:tx_counter_dp\ );
-    Properties:
-    {
-        a0_init = "00000000"
-        a1_init = "00000000"
-        ce0_sync = 1
-        ce1_sync = 1
-        cl0_sync = 1
-        cl1_sync = 1
-        cmsb_sync = 1
-        co_msb_sync = 1
-        cy_dpconfig = "1010100001000000001000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111000000001111111100000111001000000100000000000101111100000000000000001000"
-        d0_init = "00000000"
-        d1_init = "00000000"
-        f0_blk_sync = 1
-        f0_bus_sync = 1
-        f1_blk_sync = 1
-        f1_bus_sync = 1
-        ff0_sync = 1
-        ff1_sync = 1
-        ov_msb_sync = 1
-        so_sync = 1
-        z0_sync = 1
-        z1_sync = 1
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
-
-controlcell: Name =\OneWire:ControlReg_SEL:Sync:ctrl_reg\
-    PORT MAP (
-        control_7 => \OneWire:ControlReg_SEL:control_7\ ,
-        control_6 => \OneWire:ControlReg_SEL:control_6\ ,
-        control_5 => \OneWire:ControlReg_SEL:control_5\ ,
-        control_4 => \OneWire:ControlReg_SEL:control_4\ ,
-        control_3 => \OneWire:ControlReg_SEL:control_3\ ,
-        control_2 => \OneWire:ControlReg_SEL:control_2\ ,
-        control_1 => \OneWire:ControlReg_SEL:control_1\ ,
-        control_0 => \OneWire:tmpOE__bufoe_1_net_0\ );
-    Properties:
-    {
-        cy_ctrl_mode_0 = "00000000"
-        cy_ctrl_mode_1 = "00000000"
-        cy_ext_reset = 0
-        cy_force_order = 1
-        cy_init_value = "00001111"
-    }
-    Clock Enable: True
-
-UDB [UDB=(2,1)] contents:
-LAB@[UDB=(2,1)][LB=0] #macrocells=2, #inputs=6, #pterms=4
-{
-    [McSlotId=0]:     MacroCell: Name=\LED_Driver:Net_856\, Mode=(D-Register) @ [UDB=(2,1)][LB=0][MC=0]
-        Total # of inputs        : 4
-        Total # of product terms : 2
-        List of special equations: 
-            Clock  = (\LED_Driver:Net_1501\) => Global
-            Clock Enable: True
-        Main Equation            : 2 pterms
-        (
-              \LED_Driver:bLED_PWM:ctrl_0\ * 
-              !\LED_Driver:bLED_PWM:initialization\ * 
-              \LED_Driver:bLED_PWM:load_compare\
-            + \LED_Driver:bLED_PWM:ctrl_0\ * 
-              !\LED_Driver:bLED_PWM:initialization\ * 
-              \LED_Driver:bLED_PWM:drive_pwm\
-        );
-        Output = \LED_Driver:Net_856\ (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]: (empty)
-    [McSlotId=2]: (empty)
-    [McSlotId=3]:     MacroCell: Name=\LED_Driver:Net_1332\, Mode=(Combinatorial) @ [UDB=(2,1)][LB=0][MC=3]
-        Total # of inputs        : 2
-        Total # of product terms : 2
-            Clock Enable: True
-        Main Equation            : 2 pterms
-        (
-              !\LED_Driver:tc\ * \LED_Driver:Net_1352\
-            + \LED_Driver:tc\ * !\LED_Driver:Net_1352\
-        );
-        Output = \LED_Driver:Net_1332\ (fanout=1)
-        Properties               : 
-        {
-        }
-}
-
-LAB@[UDB=(2,1)][LB=1] #macrocells=1, #inputs=2, #pterms=1
-{
-    [McSlotId=0]:     MacroCell: Name=\LED_Driver:tc\, Mode=(D-Register) @ [UDB=(2,1)][LB=1][MC=0]
-        Total # of inputs        : 2
         Total # of product terms : 1
-        List of special equations: 
-            Clock  = (\LED_Driver:Net_1501\) => Global
             Clock Enable: True
         Main Equation            : 1 pterm
         (
-              \LED_Driver:bLED_PWM:ctrl_0\ * 
-              \LED_Driver:bLED_PWM:load_compare\
+              \OneWire:TimerDelay:TimerUDB:control_4\ * 
+              \OneWire:TimerDelay:TimerUDB:run_mode\ * 
+              \OneWire:TimerDelay:TimerUDB:per_zero\ * 
+              \OneWire:TimerDelay:TimerUDB:trig_rise_detected\
         );
-        Output = \LED_Driver:tc\ (fanout=3)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]: (empty)
-    [McSlotId=2]: (empty)
-    [McSlotId=3]: (empty)
-}
-
-datapathcell: Name =\LED_Driver:bLED_PWM:PwmDP:u0\
-    PORT MAP (
-        clock => \LED_Driver:Net_1501\ ,
-        cs_addr_1 => \LED_Driver:tc\ ,
-        cs_addr_0 => \LED_Driver:bLED_PWM:cnt_state_0\ ,
-        cl1_comb => \LED_Driver:bLED_PWM:drive_pwm\ ,
-        z1_comb => \LED_Driver:bLED_PWM:load_compare\ );
-    Properties:
-    {
-        a0_init = "00000000"
-        a1_init = "00000000"
-        ce0_sync = 1
-        ce1_sync = 1
-        cl0_sync = 1
-        cl1_sync = 1
-        cmsb_sync = 1
-        co_msb_sync = 1
-        cy_dpconfig = "1011110000010000010110000001000001011000100100000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111000000001111111111111111000100000000000000001111011100000000000000001000"
-        d0_init = "00000000"
-        d1_init = "00000000"
-        f0_blk_sync = 1
-        f0_bus_sync = 1
-        f1_blk_sync = 1
-        f1_bus_sync = 1
-        ff0_sync = 1
-        ff1_sync = 1
-        ov_msb_sync = 1
-        so_sync = 1
-        z0_sync = 1
-        z1_sync = 1
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
-
-statuscell: Name =\OneWire:StatusReg_BUS:sts:sts_reg\
-    PORT MAP (
-        status_7 => __ONE__ ,
-        status_6 => __ONE__ ,
-        status_5 => __ONE__ ,
-        status_4 => __ONE__ ,
-        status_3 => __ONE__ ,
-        status_2 => __ONE__ ,
-        status_1 => __ONE__ ,
-        status_0 => \OneWire:Net_807\ );
-    Properties:
-    {
-        cy_force_order = 1
-        cy_md_select = "00000000"
-    }
-    Clock Enable: True
-
-controlcell: Name =\OneWire:ControlReg_DRV:Sync:ctrl_reg\
-    PORT MAP (
-        control_7 => \OneWire:ControlReg_DRV:control_7\ ,
-        control_6 => \OneWire:ControlReg_DRV:control_6\ ,
-        control_5 => \OneWire:ControlReg_DRV:control_5\ ,
-        control_4 => \OneWire:ControlReg_DRV:control_4\ ,
-        control_3 => \OneWire:ControlReg_DRV:control_3\ ,
-        control_2 => \OneWire:ControlReg_DRV:control_2\ ,
-        control_1 => \OneWire:ControlReg_DRV:control_1\ ,
-        control_0 => \OneWire:Net_1111\ );
-    Properties:
-    {
-        cy_ctrl_mode_0 = "00000000"
-        cy_ctrl_mode_1 = "00000000"
-        cy_ext_reset = 0
-        cy_force_order = 1
-        cy_init_value = "00000001"
-    }
-    Clock Enable: True
-
-UDB [UDB=(2,2)] contents:
-LAB@[UDB=(2,2)][LB=0] #macrocells=1, #inputs=4, #pterms=2
-{
-    [McSlotId=0]: (empty)
-    [McSlotId=1]:     MacroCell: Name=\LED_Driver:bLED_PWM:initialization\, Mode=(D-Register) @ [UDB=(2,2)][LB=0][MC=1]
-        Total # of inputs        : 4
-        Total # of product terms : 2
-        List of special equations: 
-            Clock  = (\LED_Driver:Net_1501\) => Global
-            Clock Enable: True
-        Main Equation            : 2 pterms
-        (
-              !\LED_Driver:bLED_PWM:ctrl_0\
-            + \LED_Driver:bLED_PWM:initialization\ * 
-              \LED_Driver:bLED_PWM:load_compare\ * 
-              !\LED_Driver:bLED_PWM:init_cnt_1\
-        );
-        Output = \LED_Driver:bLED_PWM:initialization\ (fanout=2)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=2]: (empty)
-    [McSlotId=3]: (empty)
-}
-
-LAB@[UDB=(2,2)][LB=1] #macrocells=1, #inputs=2, #pterms=1
-{
-    [McSlotId=0]: (empty)
-    [McSlotId=1]:     MacroCell: Name=\LED_Driver:bLED_PWM:cnt_state_0\, Mode=(D-Register) @ [UDB=(2,2)][LB=1][MC=1]
-        Total # of inputs        : 2
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (\LED_Driver:Net_1501\) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \LED_Driver:bLED_PWM:ctrl_0\ * 
-              !\LED_Driver:bLED_PWM:load_compare\
-        );
-        Output = \LED_Driver:bLED_PWM:cnt_state_0\ (fanout=1)
+        Output = \OneWire:TimerDelay:TimerUDB:status_tc\ (fanout=1)
         Properties               : 
         {
         }
@@ -3074,48 +2854,65 @@ statusicell: Name =\OneWire:TimerDelay:TimerUDB:rstSts:stsreg\
     Clock Polarity: Active High
     Clock Enable: True
 
-controlcell: Name =\OneWire:Trigger:Sync:ctrl_reg\
+controlcell: Name =\OneWire:ControlReg_SEL:Sync:ctrl_reg\
     PORT MAP (
-        clock => \OneWire:Net_522\ ,
-        control_7 => \OneWire:Trigger:control_7\ ,
-        control_6 => \OneWire:Trigger:control_6\ ,
-        control_5 => \OneWire:Trigger:control_5\ ,
-        control_4 => \OneWire:Trigger:control_4\ ,
-        control_3 => \OneWire:Trigger:control_3\ ,
-        control_2 => \OneWire:Trigger:control_2\ ,
-        control_1 => \OneWire:Trigger:control_1\ ,
-        control_0 => \OneWire:Net_527\ );
+        control_7 => \OneWire:ControlReg_SEL:control_7\ ,
+        control_6 => \OneWire:ControlReg_SEL:control_6\ ,
+        control_5 => \OneWire:ControlReg_SEL:control_5\ ,
+        control_4 => \OneWire:ControlReg_SEL:control_4\ ,
+        control_3 => \OneWire:ControlReg_SEL:control_3\ ,
+        control_2 => \OneWire:ControlReg_SEL:control_2\ ,
+        control_1 => \OneWire:ControlReg_SEL:control_1\ ,
+        control_0 => \OneWire:tmpOE__bufoe_1_net_0\ );
     Properties:
     {
-        cy_ctrl_mode_0 = "00000001"
-        cy_ctrl_mode_1 = "00000001"
-        cy_ext_reset = 1
+        cy_ctrl_mode_0 = "00000000"
+        cy_ctrl_mode_1 = "00000000"
+        cy_ext_reset = 0
         cy_force_order = 1
-        cy_init_value = "00000000"
+        cy_init_value = "00001111"
     }
-    Clock Polarity: Active High
     Clock Enable: True
 
-UDB [UDB=(2,3)] contents:
-LAB@[UDB=(2,3)][LB=0] #macrocells=2, #inputs=6, #pterms=3
+UDB [UDB=(0,5)] is empty.
+UDB [UDB=(1,0)] is empty.
+UDB [UDB=(1,1)] is empty.
+UDB [UDB=(1,2)] is empty.
+UDB [UDB=(1,3)] is empty.
+UDB [UDB=(1,4)] contents:
+LAB@[UDB=(1,4)][LB=0] #macrocells=3, #inputs=10, #pterms=7
 {
     [McSlotId=0]: (empty)
-    [McSlotId=1]:     MacroCell: Name=\OneWire:TimerDelay:TimerUDB:trig_last\, Mode=(D-Register) @ [UDB=(2,3)][LB=0][MC=1]
-        Total # of inputs        : 1
-        Total # of product terms : 1
+    [McSlotId=1]:     MacroCell: Name=\OneWire:TimerDelay:TimerUDB:timer_enable\, Mode=(D-Register) @ [UDB=(1,4)][LB=0][MC=1]
+        Total # of inputs        : 8
+        Total # of product terms : 3
         List of special equations: 
             Clock  = (\OneWire:Net_522\) => Global
             Clock Enable: True
-        Main Equation            : 1 pterm
+        Main Equation            : 3 pterms
         (
-              \OneWire:Net_527\
+              !LED * \OneWire:TimerDelay:TimerUDB:control_7\ * 
+              \OneWire:TimerDelay:TimerUDB:control_4\ * 
+              !\OneWire:TimerDelay:TimerUDB:timer_enable\ * 
+              !\OneWire:TimerDelay:TimerUDB:trig_disable\ * 
+              \OneWire:TimerDelay:TimerUDB:trig_rise_detected\
+            + !LED * \OneWire:TimerDelay:TimerUDB:control_7\ * 
+              \OneWire:TimerDelay:TimerUDB:control_4\ * 
+              !\OneWire:TimerDelay:TimerUDB:run_mode\ * 
+              !\OneWire:TimerDelay:TimerUDB:trig_disable\ * 
+              \OneWire:TimerDelay:TimerUDB:trig_rise_detected\
+            + !LED * \OneWire:TimerDelay:TimerUDB:control_7\ * 
+              \OneWire:TimerDelay:TimerUDB:control_4\ * 
+              !\OneWire:TimerDelay:TimerUDB:per_zero\ * 
+              !\OneWire:TimerDelay:TimerUDB:trig_disable\ * 
+              \OneWire:TimerDelay:TimerUDB:trig_rise_detected\
         );
-        Output = \OneWire:TimerDelay:TimerUDB:trig_last\ (fanout=2)
+        Output = \OneWire:TimerDelay:TimerUDB:timer_enable\ (fanout=3)
         Properties               : 
         {
         }
 
-    [McSlotId=2]:     MacroCell: Name=\OneWire:TimerDelay:TimerUDB:trig_rise_detected\, Mode=(D-Register) @ [UDB=(2,3)][LB=0][MC=2]
+    [McSlotId=2]:     MacroCell: Name=\OneWire:TimerDelay:TimerUDB:trig_rise_detected\, Mode=(D-Register) @ [UDB=(1,4)][LB=0][MC=2]
         Total # of inputs        : 6
         Total # of product terms : 2
         List of special equations: 
@@ -3135,15 +2932,49 @@ LAB@[UDB=(2,3)][LB=0] #macrocells=2, #inputs=6, #pterms=3
         {
         }
 
-    [McSlotId=3]: (empty)
+    [McSlotId=3]:     MacroCell: Name=\OneWire:TimerDelay:TimerUDB:trig_disable\, Mode=(D-Register) @ [UDB=(1,4)][LB=0][MC=3]
+        Total # of inputs        : 7
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (\OneWire:Net_522\) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              !LED * \OneWire:TimerDelay:TimerUDB:control_4\ * 
+              \OneWire:TimerDelay:TimerUDB:timer_enable\ * 
+              \OneWire:TimerDelay:TimerUDB:run_mode\ * 
+              \OneWire:TimerDelay:TimerUDB:per_zero\ * 
+              \OneWire:TimerDelay:TimerUDB:trig_rise_detected\
+            + !LED * \OneWire:TimerDelay:TimerUDB:trig_disable\
+        );
+        Output = \OneWire:TimerDelay:TimerUDB:trig_disable\ (fanout=2)
+        Properties               : 
+        {
+        }
 }
 
-LAB@[UDB=(2,3)][LB=1] #macrocells=2, #inputs=9, #pterms=3
+LAB@[UDB=(1,4)][LB=1] #macrocells=4, #inputs=10, #pterms=5
 {
-    [McSlotId=0]: (empty)
-    [McSlotId=1]:     MacroCell: Name=\OneWire:TimerDelay:TimerUDB:status_tc\, Mode=(Combinatorial) @ [UDB=(2,3)][LB=1][MC=1]
+    [McSlotId=0]:     MacroCell: Name=\OneWire:TimerDelay:TimerUDB:trig_reg\, Mode=(Combinatorial) @ [UDB=(1,4)][LB=1][MC=0]
+        Total # of inputs        : 3
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \OneWire:TimerDelay:TimerUDB:control_4\ * 
+              \OneWire:TimerDelay:TimerUDB:timer_enable\ * 
+              \OneWire:TimerDelay:TimerUDB:trig_rise_detected\
+        );
+        Output = \OneWire:TimerDelay:TimerUDB:trig_reg\ (fanout=2)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=LED, Mode=(D-Register) @ [UDB=(1,4)][LB=1][MC=1]
         Total # of inputs        : 4
         Total # of product terms : 1
+        List of special equations: 
+            Clock  = (\OneWire:Net_522\) => Global
             Clock Enable: True
         Main Equation            : 1 pterm
         (
@@ -3152,13 +2983,27 @@ LAB@[UDB=(2,3)][LB=1] #macrocells=2, #inputs=9, #pterms=3
               \OneWire:TimerDelay:TimerUDB:per_zero\ * 
               \OneWire:TimerDelay:TimerUDB:trig_rise_detected\
         );
-        Output = \OneWire:TimerDelay:TimerUDB:status_tc\ (fanout=1)
+        Output = LED (fanout=9)
         Properties               : 
         {
         }
 
-    [McSlotId=2]: (empty)
-    [McSlotId=3]:     MacroCell: Name=\OneWire:TimerDelay:TimerUDB:trig_fall_detected\, Mode=(D-Register) @ [UDB=(2,3)][LB=1][MC=3]
+    [McSlotId=2]:     MacroCell: Name=\OneWire:TimerDelay:TimerUDB:run_mode\, Mode=(D-Register) @ [UDB=(1,4)][LB=1][MC=2]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (\OneWire:Net_522\) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \OneWire:TimerDelay:TimerUDB:control_7\
+        );
+        Output = \OneWire:TimerDelay:TimerUDB:run_mode\ (fanout=4)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]:     MacroCell: Name=\OneWire:TimerDelay:TimerUDB:trig_fall_detected\, Mode=(D-Register) @ [UDB=(1,4)][LB=1][MC=3]
         Total # of inputs        : 6
         Total # of product terms : 2
         List of special equations: 
@@ -3174,311 +3019,6 @@ LAB@[UDB=(2,3)][LB=1] #macrocells=2, #inputs=9, #pterms=3
               \OneWire:TimerDelay:TimerUDB:trig_fall_detected\
         );
         Output = \OneWire:TimerDelay:TimerUDB:trig_fall_detected\ (fanout=1)
-        Properties               : 
-        {
-        }
-}
-
-controlcell: Name =\OneWire:TimerDelay:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\
-    PORT MAP (
-        clock => \OneWire:Net_522\ ,
-        control_7 => \OneWire:TimerDelay:TimerUDB:control_7\ ,
-        control_6 => \OneWire:TimerDelay:TimerUDB:control_6\ ,
-        control_5 => \OneWire:TimerDelay:TimerUDB:control_5\ ,
-        control_4 => \OneWire:TimerDelay:TimerUDB:control_4\ ,
-        control_3 => \OneWire:TimerDelay:TimerUDB:control_3\ ,
-        control_2 => \OneWire:TimerDelay:TimerUDB:control_2\ ,
-        control_1 => \OneWire:TimerDelay:TimerUDB:control_1\ ,
-        control_0 => \OneWire:TimerDelay:TimerUDB:control_0\ );
-    Properties:
-    {
-        cy_ctrl_mode_0 = "11111111"
-        cy_ctrl_mode_1 = "00000000"
-        cy_ext_reset = 0
-        cy_force_order = 1
-        cy_init_value = "00000000"
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
-
-UDB [UDB=(2,4)] is empty.
-UDB [UDB=(2,5)] is empty.
-UDB [UDB=(3,0)] contents:
-LAB@[UDB=(3,0)][LB=0] #macrocells=2, #inputs=7, #pterms=6
-{
-    [McSlotId=0]:     MacroCell: Name=\UART_1:BUART:txn\, Mode=(D-Register) @ [UDB=(3,0)][LB=0][MC=0]
-        Total # of inputs        : 7
-        Total # of product terms : 5
-        List of special equations: 
-            Clock  = (Net_42) => Global
-            Clock Enable: True
-        Main Equation            : 5 pterms
-        (
-              \UART_1:BUART:txn\ * \UART_1:BUART:tx_state_1\ * 
-              !\UART_1:BUART:tx_bitclk\
-            + \UART_1:BUART:txn\ * \UART_1:BUART:tx_state_2\
-            + !\UART_1:BUART:tx_state_1\ * \UART_1:BUART:tx_state_0\ * 
-              !\UART_1:BUART:tx_shift_out\ * !\UART_1:BUART:tx_state_2\
-            + !\UART_1:BUART:tx_state_1\ * \UART_1:BUART:tx_state_0\ * 
-              !\UART_1:BUART:tx_state_2\ * !\UART_1:BUART:tx_bitclk\
-            + \UART_1:BUART:tx_state_1\ * !\UART_1:BUART:tx_state_0\ * 
-              !\UART_1:BUART:tx_shift_out\ * !\UART_1:BUART:tx_state_2\ * 
-              !\UART_1:BUART:tx_counter_dp\ * \UART_1:BUART:tx_bitclk\
-        );
-        Output = \UART_1:BUART:txn\ (fanout=2)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]:     MacroCell: Name=Net_39, Mode=(Combinatorial) @ [UDB=(3,0)][LB=0][MC=1]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              !\UART_1:BUART:txn\
-        );
-        Output = Net_39 (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=2]: (empty)
-    [McSlotId=3]: (empty)
-}
-
-LAB@[UDB=(3,0)][LB=1] #macrocells=1, #inputs=6, #pterms=3
-{
-    [McSlotId=0]:     MacroCell: Name=\UART_1:BUART:tx_state_1\, Mode=(T-Register) @ [UDB=(3,0)][LB=1][MC=0]
-        Total # of inputs        : 6
-        Total # of product terms : 3
-        List of special equations: 
-            Clock  = (Net_42) => Global
-            Clock Enable: True
-        Main Equation            : 3 pterms
-        (
-              \UART_1:BUART:tx_state_1\ * \UART_1:BUART:tx_state_0\ * 
-              \UART_1:BUART:tx_bitclk_enable_pre\ * \UART_1:BUART:tx_state_2\
-            + \UART_1:BUART:tx_state_1\ * !\UART_1:BUART:tx_state_2\ * 
-              \UART_1:BUART:tx_counter_dp\ * \UART_1:BUART:tx_bitclk\
-            + \UART_1:BUART:tx_state_0\ * !\UART_1:BUART:tx_state_2\ * 
-              \UART_1:BUART:tx_bitclk\
-        );
-        Output = \UART_1:BUART:tx_state_1\ (fanout=8)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]: (empty)
-    [McSlotId=2]: (empty)
-    [McSlotId=3]: (empty)
-}
-
-controlcell: Name =\LED_Driver:bLED_PWM:CtlReg\
-    PORT MAP (
-        clock => \LED_Driver:Net_1501\ ,
-        control_7 => \LED_Driver:bLED_PWM:ctrl_7\ ,
-        control_6 => \LED_Driver:bLED_PWM:ctrl_6\ ,
-        control_5 => \LED_Driver:bLED_PWM:ctrl_5\ ,
-        control_4 => \LED_Driver:bLED_PWM:ctrl_4\ ,
-        control_3 => \LED_Driver:bLED_PWM:ctrl_3\ ,
-        control_2 => \LED_Driver:bLED_PWM:ctrl_2\ ,
-        control_1 => \LED_Driver:bLED_PWM:ctrl_1\ ,
-        control_0 => \LED_Driver:bLED_PWM:ctrl_0\ );
-    Properties:
-    {
-        cy_ctrl_mode_0 = "00000001"
-        cy_ctrl_mode_1 = "00000000"
-        cy_ext_reset = 0
-        cy_force_order = 1
-        cy_init_value = "00000000"
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
-
-UDB [UDB=(3,1)] contents:
-LAB@[UDB=(3,1)][LB=0] #macrocells=1, #inputs=6, #pterms=4
-{
-    [McSlotId=0]:     MacroCell: Name=\UART_1:BUART:tx_state_0\, Mode=(T-Register) @ [UDB=(3,1)][LB=0][MC=0]
-        Total # of inputs        : 6
-        Total # of product terms : 4
-        List of special equations: 
-            Clock  = (Net_42) => Global
-            Clock Enable: True
-        Main Equation            : 4 pterms
-        (
-              !\UART_1:BUART:tx_state_1\ * !\UART_1:BUART:tx_state_0\ * 
-              \UART_1:BUART:tx_bitclk_enable_pre\ * 
-              !\UART_1:BUART:tx_fifo_empty\
-            + !\UART_1:BUART:tx_state_1\ * !\UART_1:BUART:tx_state_0\ * 
-              !\UART_1:BUART:tx_fifo_empty\ * !\UART_1:BUART:tx_state_2\
-            + \UART_1:BUART:tx_state_1\ * \UART_1:BUART:tx_state_0\ * 
-              \UART_1:BUART:tx_bitclk_enable_pre\ * 
-              \UART_1:BUART:tx_fifo_empty\ * \UART_1:BUART:tx_state_2\
-            + \UART_1:BUART:tx_state_0\ * !\UART_1:BUART:tx_state_2\ * 
-              \UART_1:BUART:tx_bitclk\
-        );
-        Output = \UART_1:BUART:tx_state_0\ (fanout=8)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]: (empty)
-    [McSlotId=2]: (empty)
-    [McSlotId=3]: (empty)
-}
-
-LAB@[UDB=(3,1)][LB=1] #macrocells=1, #inputs=4, #pterms=2
-{
-    [McSlotId=0]: (empty)
-    [McSlotId=1]:     MacroCell: Name=\UART_1:BUART:tx_bitclk\, Mode=(D-Register) @ [UDB=(3,1)][LB=1][MC=1]
-        Total # of inputs        : 4
-        Total # of product terms : 2
-        List of special equations: 
-            Clock  = (Net_42) => Global
-            Clock Enable: True
-        Main Equation            : 2 pterms
-        !(
-              !\UART_1:BUART:tx_state_1\ * !\UART_1:BUART:tx_state_0\ * 
-              \UART_1:BUART:tx_state_2\
-            + !\UART_1:BUART:tx_bitclk_enable_pre\
-        );
-        Output = \UART_1:BUART:tx_bitclk\ (fanout=4)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=2]: (empty)
-    [McSlotId=3]: (empty)
-}
-
-datapathcell: Name =\UART_1:BUART:sTX:TxShifter:u0\
-    PORT MAP (
-        clock => Net_42 ,
-        cs_addr_2 => \UART_1:BUART:tx_state_1\ ,
-        cs_addr_1 => \UART_1:BUART:tx_state_0\ ,
-        cs_addr_0 => \UART_1:BUART:tx_bitclk_enable_pre\ ,
-        so_comb => \UART_1:BUART:tx_shift_out\ ,
-        f0_bus_stat_comb => \UART_1:BUART:tx_fifo_notfull\ ,
-        f0_blk_stat_comb => \UART_1:BUART:tx_fifo_empty\ );
-    Properties:
-    {
-        a0_init = "00000000"
-        a1_init = "00000000"
-        ce0_sync = 1
-        ce1_sync = 1
-        cl0_sync = 1
-        cl1_sync = 1
-        cmsb_sync = 1
-        co_msb_sync = 1
-        cy_dpconfig = "0000000000000000000000000000000000000000000000000000000011000000000000000000000000000010010000000000000000000000000000000000000011111111000000001111111111111111000000000000000001000100111100000000000000001100"
-        d0_init = "00000000"
-        d1_init = "00000000"
-        f0_blk_sync = 1
-        f0_bus_sync = 1
-        f1_blk_sync = 1
-        f1_bus_sync = 1
-        ff0_sync = 1
-        ff1_sync = 1
-        ov_msb_sync = 1
-        so_sync = 1
-        z0_sync = 1
-        z1_sync = 1
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
-
-controlcell: Name =\LED_Driver:Seg_Driver_L:Sync:ctrl_reg\
-    PORT MAP (
-        control_7 => Net_2203_7 ,
-        control_6 => Net_2203_6 ,
-        control_5 => Net_2203_5 ,
-        control_4 => Net_2203_4 ,
-        control_3 => Net_2203_3 ,
-        control_2 => Net_2203_2 ,
-        control_1 => Net_2203_1 ,
-        control_0 => Net_2203_0 );
-    Properties:
-    {
-        cy_ctrl_mode_0 = "00000000"
-        cy_ctrl_mode_1 = "00000000"
-        cy_ext_reset = 0
-        cy_force_order = 1
-        cy_init_value = "00000000"
-    }
-    Clock Enable: True
-
-UDB [UDB=(3,2)] contents:
-LAB@[UDB=(3,2)][LB=0] #macrocells=2, #inputs=9, #pterms=3
-{
-    [McSlotId=0]: (empty)
-    [McSlotId=1]:     MacroCell: Name=\LED_Driver:bLED_PWM:init_cnt_1\, Mode=(D-Register) @ [UDB=(3,2)][LB=0][MC=1]
-        Total # of inputs        : 4
-        Total # of product terms : 2
-        List of special equations: 
-            Clock  = (\LED_Driver:Net_1501\) => Global
-            Clock Enable: True
-        Main Equation            : 2 pterms
-        (
-              \LED_Driver:bLED_PWM:ctrl_0\ * 
-              \LED_Driver:bLED_PWM:load_compare\ * 
-              \LED_Driver:bLED_PWM:init_cnt_0\
-            + \LED_Driver:bLED_PWM:ctrl_0\ * \LED_Driver:bLED_PWM:init_cnt_1\
-        );
-        Output = \LED_Driver:bLED_PWM:init_cnt_1\ (fanout=3)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=2]: (empty)
-    [McSlotId=3]:     MacroCell: Name=\UART_1:BUART:tx_status_0\, Mode=(Combinatorial) @ [UDB=(3,2)][LB=0][MC=3]
-        Total # of inputs        : 5
-        Total # of product terms : 1
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              !\UART_1:BUART:tx_state_1\ * !\UART_1:BUART:tx_state_0\ * 
-              \UART_1:BUART:tx_bitclk_enable_pre\ * 
-              \UART_1:BUART:tx_fifo_empty\ * \UART_1:BUART:tx_state_2\
-        );
-        Output = \UART_1:BUART:tx_status_0\ (fanout=1)
-        Properties               : 
-        {
-        }
-}
-
-LAB@[UDB=(3,2)][LB=1] #macrocells=2, #inputs=5, #pterms=3
-{
-    [McSlotId=0]: (empty)
-    [McSlotId=1]: (empty)
-    [McSlotId=2]:     MacroCell: Name=\UART_1:BUART:tx_status_2\, Mode=(Combinatorial) @ [UDB=(3,2)][LB=1][MC=2]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              !\UART_1:BUART:tx_fifo_notfull\
-        );
-        Output = \UART_1:BUART:tx_status_2\ (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=3]:     MacroCell: Name=\LED_Driver:bLED_PWM:init_cnt_0\, Mode=(T-Register) @ [UDB=(3,2)][LB=1][MC=3]
-        Total # of inputs        : 4
-        Total # of product terms : 2
-        List of special equations: 
-            Clock  = (\LED_Driver:Net_1501\) => Global
-            Clock Enable: True
-        Main Equation            : 2 pterms
-        (
-              !\LED_Driver:bLED_PWM:ctrl_0\ * 
-              \LED_Driver:bLED_PWM:init_cnt_0\
-            + \LED_Driver:bLED_PWM:ctrl_0\ * 
-              \LED_Driver:bLED_PWM:load_compare\ * 
-              !\LED_Driver:bLED_PWM:init_cnt_1\
-        );
-        Output = \LED_Driver:bLED_PWM:init_cnt_0\ (fanout=2)
         Properties               : 
         {
         }
@@ -3519,6 +3059,222 @@ datapathcell: Name =\OneWire:TimerDelay:TimerUDB:sT16:timerdp:u0\
     Clock Enable: True
     Next in chain : \OneWire:TimerDelay:TimerUDB:sT16:timerdp:u1\
 
+controlcell: Name =\OneWire:TimerDelay:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\
+    PORT MAP (
+        clock => \OneWire:Net_522\ ,
+        control_7 => \OneWire:TimerDelay:TimerUDB:control_7\ ,
+        control_6 => \OneWire:TimerDelay:TimerUDB:control_6\ ,
+        control_5 => \OneWire:TimerDelay:TimerUDB:control_5\ ,
+        control_4 => \OneWire:TimerDelay:TimerUDB:control_4\ ,
+        control_3 => \OneWire:TimerDelay:TimerUDB:control_3\ ,
+        control_2 => \OneWire:TimerDelay:TimerUDB:control_2\ ,
+        control_1 => \OneWire:TimerDelay:TimerUDB:control_1\ ,
+        control_0 => \OneWire:TimerDelay:TimerUDB:control_0\ );
+    Properties:
+    {
+        cy_ctrl_mode_0 = "11111111"
+        cy_ctrl_mode_1 = "00000000"
+        cy_ext_reset = 0
+        cy_force_order = 1
+        cy_init_value = "00000000"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+UDB [UDB=(1,5)] is empty.
+UDB [UDB=(2,0)] contents:
+LAB@[UDB=(2,0)][LB=0] #macrocells=1, #inputs=4, #pterms=2
+{
+    [McSlotId=0]:     MacroCell: Name=\LED_Driver:bLED_PWM:init_cnt_0\, Mode=(T-Register) @ [UDB=(2,0)][LB=0][MC=0]
+        Total # of inputs        : 4
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (\LED_Driver:Net_1501\) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              !\LED_Driver:bLED_PWM:ctrl_0\ * 
+              \LED_Driver:bLED_PWM:init_cnt_0\
+            + \LED_Driver:bLED_PWM:ctrl_0\ * 
+              \LED_Driver:bLED_PWM:load_compare\ * 
+              !\LED_Driver:bLED_PWM:init_cnt_1\
+        );
+        Output = \LED_Driver:bLED_PWM:init_cnt_0\ (fanout=2)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+LAB@[UDB=(2,0)][LB=1] #macrocells=1, #inputs=4, #pterms=2
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]:     MacroCell: Name=\LED_Driver:bLED_PWM:init_cnt_1\, Mode=(D-Register) @ [UDB=(2,0)][LB=1][MC=1]
+        Total # of inputs        : 4
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (\LED_Driver:Net_1501\) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              \LED_Driver:bLED_PWM:ctrl_0\ * 
+              \LED_Driver:bLED_PWM:load_compare\ * 
+              \LED_Driver:bLED_PWM:init_cnt_0\
+            + \LED_Driver:bLED_PWM:ctrl_0\ * \LED_Driver:bLED_PWM:init_cnt_1\
+        );
+        Output = \LED_Driver:bLED_PWM:init_cnt_1\ (fanout=3)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+statuscell: Name =\OneWire:StatusReg_BUS:sts:sts_reg\
+    PORT MAP (
+        status_7 => __ONE__ ,
+        status_6 => __ONE__ ,
+        status_5 => __ONE__ ,
+        status_4 => __ONE__ ,
+        status_3 => __ONE__ ,
+        status_2 => __ONE__ ,
+        status_1 => __ONE__ ,
+        status_0 => \OneWire:Net_807\ );
+    Properties:
+    {
+        cy_force_order = 1
+        cy_md_select = "00000000"
+    }
+    Clock Enable: True
+
+controlcell: Name =\OneWire:Trigger:Sync:ctrl_reg\
+    PORT MAP (
+        clock => \OneWire:Net_522\ ,
+        control_7 => \OneWire:Trigger:control_7\ ,
+        control_6 => \OneWire:Trigger:control_6\ ,
+        control_5 => \OneWire:Trigger:control_5\ ,
+        control_4 => \OneWire:Trigger:control_4\ ,
+        control_3 => \OneWire:Trigger:control_3\ ,
+        control_2 => \OneWire:Trigger:control_2\ ,
+        control_1 => \OneWire:Trigger:control_1\ ,
+        control_0 => \OneWire:Net_527\ );
+    Properties:
+    {
+        cy_ctrl_mode_0 = "00000001"
+        cy_ctrl_mode_1 = "00000001"
+        cy_ext_reset = 1
+        cy_force_order = 1
+        cy_init_value = "00000000"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+UDB [UDB=(2,1)] contents:
+LAB@[UDB=(2,1)][LB=0] #macrocells=2, #inputs=7, #pterms=5
+{
+    [McSlotId=0]:     MacroCell: Name=\UART_1:BUART:tx_state_0\, Mode=(T-Register) @ [UDB=(2,1)][LB=0][MC=0]
+        Total # of inputs        : 6
+        Total # of product terms : 4
+        List of special equations: 
+            Clock  = (Net_42) => Global
+            Clock Enable: True
+        Main Equation            : 4 pterms
+        (
+              !\UART_1:BUART:tx_state_1\ * !\UART_1:BUART:tx_state_0\ * 
+              \UART_1:BUART:tx_bitclk_enable_pre\ * 
+              !\UART_1:BUART:tx_fifo_empty\
+            + !\UART_1:BUART:tx_state_1\ * !\UART_1:BUART:tx_state_0\ * 
+              !\UART_1:BUART:tx_fifo_empty\ * !\UART_1:BUART:tx_state_2\
+            + \UART_1:BUART:tx_state_1\ * \UART_1:BUART:tx_state_0\ * 
+              \UART_1:BUART:tx_bitclk_enable_pre\ * 
+              \UART_1:BUART:tx_fifo_empty\ * \UART_1:BUART:tx_state_2\
+            + \UART_1:BUART:tx_state_0\ * !\UART_1:BUART:tx_state_2\ * 
+              \UART_1:BUART:tx_bitclk\
+        );
+        Output = \UART_1:BUART:tx_state_0\ (fanout=8)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]: (empty)
+    [McSlotId=2]:     MacroCell: Name=\UART_1:BUART:tx_status_2\, Mode=(Combinatorial) @ [UDB=(2,1)][LB=0][MC=2]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\UART_1:BUART:tx_fifo_notfull\
+        );
+        Output = \UART_1:BUART:tx_status_2\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]: (empty)
+}
+
+LAB@[UDB=(2,1)][LB=1] #macrocells=1, #inputs=5, #pterms=1
+{
+    [McSlotId=0]:     MacroCell: Name=\UART_1:BUART:tx_status_0\, Mode=(Combinatorial) @ [UDB=(2,1)][LB=1][MC=0]
+        Total # of inputs        : 5
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\UART_1:BUART:tx_state_1\ * !\UART_1:BUART:tx_state_0\ * 
+              \UART_1:BUART:tx_bitclk_enable_pre\ * 
+              \UART_1:BUART:tx_fifo_empty\ * \UART_1:BUART:tx_state_2\
+        );
+        Output = \UART_1:BUART:tx_status_0\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+datapathcell: Name =\UART_1:BUART:sTX:TxShifter:u0\
+    PORT MAP (
+        clock => Net_42 ,
+        cs_addr_2 => \UART_1:BUART:tx_state_1\ ,
+        cs_addr_1 => \UART_1:BUART:tx_state_0\ ,
+        cs_addr_0 => \UART_1:BUART:tx_bitclk_enable_pre\ ,
+        so_comb => \UART_1:BUART:tx_shift_out\ ,
+        f0_bus_stat_comb => \UART_1:BUART:tx_fifo_notfull\ ,
+        f0_blk_stat_comb => \UART_1:BUART:tx_fifo_empty\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "0000000000000000000000000000000000000000000000000000000011000000000000000000000000000010010000000000000000000000000000000000000011111111000000001111111111111111000000000000000001000100111100000000000000001100"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
 statusicell: Name =\UART_1:BUART:sTX:TxSts\
     PORT MAP (
         clock => Net_42 ,
@@ -3536,41 +3292,75 @@ statusicell: Name =\UART_1:BUART:sTX:TxSts\
     Clock Polarity: Active High
     Clock Enable: True
 
-UDB [UDB=(3,3)] contents:
-LAB@[UDB=(3,3)][LB=0] #macrocells=2, #inputs=8, #pterms=4
+controlcell: Name =\OneWire:ControlReg_DRV:Sync:ctrl_reg\
+    PORT MAP (
+        control_7 => \OneWire:ControlReg_DRV:control_7\ ,
+        control_6 => \OneWire:ControlReg_DRV:control_6\ ,
+        control_5 => \OneWire:ControlReg_DRV:control_5\ ,
+        control_4 => \OneWire:ControlReg_DRV:control_4\ ,
+        control_3 => \OneWire:ControlReg_DRV:control_3\ ,
+        control_2 => \OneWire:ControlReg_DRV:control_2\ ,
+        control_1 => \OneWire:ControlReg_DRV:control_1\ ,
+        control_0 => \OneWire:Net_1111\ );
+    Properties:
+    {
+        cy_ctrl_mode_0 = "00000000"
+        cy_ctrl_mode_1 = "00000000"
+        cy_ext_reset = 0
+        cy_force_order = 1
+        cy_init_value = "00000001"
+    }
+    Clock Enable: True
+
+UDB [UDB=(2,2)] contents:
+LAB@[UDB=(2,2)][LB=0] #macrocells=1, #inputs=6, #pterms=3
 {
     [McSlotId=0]: (empty)
-    [McSlotId=1]:     MacroCell: Name=\OneWire:TimerDelay:TimerUDB:timer_enable\, Mode=(D-Register) @ [UDB=(3,3)][LB=0][MC=1]
-        Total # of inputs        : 8
+    [McSlotId=1]:     MacroCell: Name=\UART_1:BUART:tx_state_1\, Mode=(T-Register) @ [UDB=(2,2)][LB=0][MC=1]
+        Total # of inputs        : 6
         Total # of product terms : 3
         List of special equations: 
-            Clock  = (\OneWire:Net_522\) => Global
+            Clock  = (Net_42) => Global
             Clock Enable: True
         Main Equation            : 3 pterms
         (
-              !LED * \OneWire:TimerDelay:TimerUDB:control_7\ * 
-              \OneWire:TimerDelay:TimerUDB:control_4\ * 
-              !\OneWire:TimerDelay:TimerUDB:timer_enable\ * 
-              !\OneWire:TimerDelay:TimerUDB:trig_disable\ * 
-              \OneWire:TimerDelay:TimerUDB:trig_rise_detected\
-            + !LED * \OneWire:TimerDelay:TimerUDB:control_7\ * 
-              \OneWire:TimerDelay:TimerUDB:control_4\ * 
-              !\OneWire:TimerDelay:TimerUDB:run_mode\ * 
-              !\OneWire:TimerDelay:TimerUDB:trig_disable\ * 
-              \OneWire:TimerDelay:TimerUDB:trig_rise_detected\
-            + !LED * \OneWire:TimerDelay:TimerUDB:control_7\ * 
-              \OneWire:TimerDelay:TimerUDB:control_4\ * 
-              !\OneWire:TimerDelay:TimerUDB:per_zero\ * 
-              !\OneWire:TimerDelay:TimerUDB:trig_disable\ * 
-              \OneWire:TimerDelay:TimerUDB:trig_rise_detected\
+              \UART_1:BUART:tx_state_1\ * \UART_1:BUART:tx_state_0\ * 
+              \UART_1:BUART:tx_bitclk_enable_pre\ * \UART_1:BUART:tx_state_2\
+            + \UART_1:BUART:tx_state_1\ * !\UART_1:BUART:tx_state_2\ * 
+              \UART_1:BUART:tx_counter_dp\ * \UART_1:BUART:tx_bitclk\
+            + \UART_1:BUART:tx_state_0\ * !\UART_1:BUART:tx_state_2\ * 
+              \UART_1:BUART:tx_bitclk\
         );
-        Output = \OneWire:TimerDelay:TimerUDB:timer_enable\ (fanout=3)
+        Output = \UART_1:BUART:tx_state_1\ (fanout=8)
         Properties               : 
         {
         }
 
     [McSlotId=2]: (empty)
-    [McSlotId=3]:     MacroCell: Name=\OneWire:TimerDelay:TimerUDB:run_mode\, Mode=(D-Register) @ [UDB=(3,3)][LB=0][MC=3]
+    [McSlotId=3]: (empty)
+}
+
+LAB@[UDB=(2,2)][LB=1] #macrocells=2, #inputs=5, #pterms=3
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]:     MacroCell: Name=\UART_1:BUART:counter_load_not\, Mode=(Combinatorial) @ [UDB=(2,2)][LB=1][MC=1]
+        Total # of inputs        : 4
+        Total # of product terms : 2
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        !(
+              !\UART_1:BUART:tx_state_1\ * !\UART_1:BUART:tx_state_0\ * 
+              \UART_1:BUART:tx_bitclk_enable_pre\
+            + !\UART_1:BUART:tx_state_1\ * !\UART_1:BUART:tx_state_0\ * 
+              !\UART_1:BUART:tx_state_2\
+        );
+        Output = \UART_1:BUART:counter_load_not\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]: (empty)
+    [McSlotId=3]:     MacroCell: Name=\OneWire:TimerDelay:TimerUDB:trig_last\, Mode=(D-Register) @ [UDB=(2,2)][LB=1][MC=3]
         Total # of inputs        : 1
         Total # of product terms : 1
         List of special equations: 
@@ -3578,66 +3368,321 @@ LAB@[UDB=(3,3)][LB=0] #macrocells=2, #inputs=8, #pterms=4
             Clock Enable: True
         Main Equation            : 1 pterm
         (
-              \OneWire:TimerDelay:TimerUDB:control_7\
+              \OneWire:Net_527\
         );
-        Output = \OneWire:TimerDelay:TimerUDB:run_mode\ (fanout=4)
+        Output = \OneWire:TimerDelay:TimerUDB:trig_last\ (fanout=2)
         Properties               : 
         {
         }
 }
 
-LAB@[UDB=(3,3)][LB=1] #macrocells=3, #inputs=7, #pterms=4
+datapathcell: Name =\UART_1:BUART:sTX:sCLOCK:TxBitClkGen\
+    PORT MAP (
+        clock => Net_42 ,
+        cs_addr_0 => \UART_1:BUART:counter_load_not\ ,
+        ce0_reg => \UART_1:BUART:tx_bitclk_enable_pre\ ,
+        ce1_reg => \UART_1:BUART:tx_counter_dp\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "1010100001000000001000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111000000001111111100000111001000000100000000000101111100000000000000001000"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+controlcell: Name =\LED_Driver:Seg_Driver_L:Sync:ctrl_reg\
+    PORT MAP (
+        control_7 => Net_2203_7 ,
+        control_6 => Net_2203_6 ,
+        control_5 => Net_2203_5 ,
+        control_4 => Net_2203_4 ,
+        control_3 => Net_2203_3 ,
+        control_2 => Net_2203_2 ,
+        control_1 => Net_2203_1 ,
+        control_0 => Net_2203_0 );
+    Properties:
+    {
+        cy_ctrl_mode_0 = "00000000"
+        cy_ctrl_mode_1 = "00000000"
+        cy_ext_reset = 0
+        cy_force_order = 1
+        cy_init_value = "00000000"
+    }
+    Clock Enable: True
+
+UDB [UDB=(2,3)] is empty.
+UDB [UDB=(2,4)] is empty.
+UDB [UDB=(2,5)] is empty.
+UDB [UDB=(3,0)] contents:
+LAB@[UDB=(3,0)][LB=0] #macrocells=3, #inputs=5, #pterms=4
 {
-    [McSlotId=0]: (empty)
-    [McSlotId=1]:     MacroCell: Name=LED, Mode=(D-Register) @ [UDB=(3,3)][LB=1][MC=1]
-        Total # of inputs        : 4
+    [McSlotId=0]:     MacroCell: Name=\LED_Driver:tc\, Mode=(D-Register) @ [UDB=(3,0)][LB=0][MC=0]
+        Total # of inputs        : 2
         Total # of product terms : 1
         List of special equations: 
-            Clock  = (\OneWire:Net_522\) => Global
+            Clock  = (\LED_Driver:Net_1501\) => Global
             Clock Enable: True
         Main Equation            : 1 pterm
         (
-              \OneWire:TimerDelay:TimerUDB:control_4\ * 
-              \OneWire:TimerDelay:TimerUDB:run_mode\ * 
-              \OneWire:TimerDelay:TimerUDB:per_zero\ * 
-              \OneWire:TimerDelay:TimerUDB:trig_rise_detected\
+              \LED_Driver:bLED_PWM:ctrl_0\ * 
+              \LED_Driver:bLED_PWM:load_compare\
         );
-        Output = LED (fanout=9)
+        Output = \LED_Driver:tc\ (fanout=3)
         Properties               : 
         {
         }
 
-    [McSlotId=2]:     MacroCell: Name=\OneWire:TimerDelay:TimerUDB:trig_reg\, Mode=(Combinatorial) @ [UDB=(3,3)][LB=1][MC=2]
-        Total # of inputs        : 3
-        Total # of product terms : 1
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \OneWire:TimerDelay:TimerUDB:control_4\ * 
-              \OneWire:TimerDelay:TimerUDB:timer_enable\ * 
-              \OneWire:TimerDelay:TimerUDB:trig_rise_detected\
-        );
-        Output = \OneWire:TimerDelay:TimerUDB:trig_reg\ (fanout=2)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=3]:     MacroCell: Name=\OneWire:TimerDelay:TimerUDB:trig_disable\, Mode=(D-Register) @ [UDB=(3,3)][LB=1][MC=3]
-        Total # of inputs        : 7
+    [McSlotId=1]:     MacroCell: Name=\LED_Driver:Net_856\, Mode=(D-Register) @ [UDB=(3,0)][LB=0][MC=1]
+        Total # of inputs        : 4
         Total # of product terms : 2
         List of special equations: 
-            Clock  = (\OneWire:Net_522\) => Global
+            Clock  = (\LED_Driver:Net_1501\) => Global
             Clock Enable: True
         Main Equation            : 2 pterms
         (
-              !LED * \OneWire:TimerDelay:TimerUDB:control_4\ * 
-              \OneWire:TimerDelay:TimerUDB:timer_enable\ * 
-              \OneWire:TimerDelay:TimerUDB:run_mode\ * 
-              \OneWire:TimerDelay:TimerUDB:per_zero\ * 
-              \OneWire:TimerDelay:TimerUDB:trig_rise_detected\
-            + !LED * \OneWire:TimerDelay:TimerUDB:trig_disable\
+              \LED_Driver:bLED_PWM:ctrl_0\ * 
+              !\LED_Driver:bLED_PWM:initialization\ * 
+              \LED_Driver:bLED_PWM:load_compare\
+            + \LED_Driver:bLED_PWM:ctrl_0\ * 
+              !\LED_Driver:bLED_PWM:initialization\ * 
+              \LED_Driver:bLED_PWM:drive_pwm\
         );
-        Output = \OneWire:TimerDelay:TimerUDB:trig_disable\ (fanout=2)
+        Output = \LED_Driver:Net_856\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=Net_39, Mode=(Combinatorial) @ [UDB=(3,0)][LB=0][MC=2]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\UART_1:BUART:txn\
+        );
+        Output = Net_39 (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]: (empty)
+}
+
+LAB@[UDB=(3,0)][LB=1] #macrocells=2, #inputs=6, #pterms=4
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]:     MacroCell: Name=\LED_Driver:Net_1332\, Mode=(Combinatorial) @ [UDB=(3,0)][LB=1][MC=1]
+        Total # of inputs        : 2
+        Total # of product terms : 2
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              !\LED_Driver:tc\ * \LED_Driver:Net_1352\
+            + \LED_Driver:tc\ * !\LED_Driver:Net_1352\
+        );
+        Output = \LED_Driver:Net_1332\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]: (empty)
+    [McSlotId=3]:     MacroCell: Name=\LED_Driver:bLED_PWM:initialization\, Mode=(D-Register) @ [UDB=(3,0)][LB=1][MC=3]
+        Total # of inputs        : 4
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (\LED_Driver:Net_1501\) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              !\LED_Driver:bLED_PWM:ctrl_0\
+            + \LED_Driver:bLED_PWM:initialization\ * 
+              \LED_Driver:bLED_PWM:load_compare\ * 
+              !\LED_Driver:bLED_PWM:init_cnt_1\
+        );
+        Output = \LED_Driver:bLED_PWM:initialization\ (fanout=2)
+        Properties               : 
+        {
+        }
+}
+
+datapathcell: Name =\LED_Driver:bLED_PWM:PwmDP:u0\
+    PORT MAP (
+        clock => \LED_Driver:Net_1501\ ,
+        cs_addr_1 => \LED_Driver:tc\ ,
+        cs_addr_0 => \LED_Driver:bLED_PWM:cnt_state_0\ ,
+        cl1_comb => \LED_Driver:bLED_PWM:drive_pwm\ ,
+        z1_comb => \LED_Driver:bLED_PWM:load_compare\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "1011110000010000010110000001000001011000100100000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111000000001111111111111111000100000000000000001111011100000000000000001000"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+controlcell: Name =\LED_Driver:bLED_PWM:CtlReg\
+    PORT MAP (
+        clock => \LED_Driver:Net_1501\ ,
+        control_7 => \LED_Driver:bLED_PWM:ctrl_7\ ,
+        control_6 => \LED_Driver:bLED_PWM:ctrl_6\ ,
+        control_5 => \LED_Driver:bLED_PWM:ctrl_5\ ,
+        control_4 => \LED_Driver:bLED_PWM:ctrl_4\ ,
+        control_3 => \LED_Driver:bLED_PWM:ctrl_3\ ,
+        control_2 => \LED_Driver:bLED_PWM:ctrl_2\ ,
+        control_1 => \LED_Driver:bLED_PWM:ctrl_1\ ,
+        control_0 => \LED_Driver:bLED_PWM:ctrl_0\ );
+    Properties:
+    {
+        cy_ctrl_mode_0 = "00000001"
+        cy_ctrl_mode_1 = "00000000"
+        cy_ext_reset = 0
+        cy_force_order = 1
+        cy_init_value = "00000000"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+UDB [UDB=(3,1)] contents:
+LAB@[UDB=(3,1)][LB=0] #macrocells=1, #inputs=2, #pterms=1
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]:     MacroCell: Name=\LED_Driver:bLED_PWM:cnt_state_0\, Mode=(D-Register) @ [UDB=(3,1)][LB=0][MC=1]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (\LED_Driver:Net_1501\) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \LED_Driver:bLED_PWM:ctrl_0\ * 
+              !\LED_Driver:bLED_PWM:load_compare\
+        );
+        Output = \LED_Driver:bLED_PWM:cnt_state_0\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+LAB@[UDB=(3,1)][LB=1] #macrocells=1, #inputs=7, #pterms=5
+{
+    [McSlotId=0]:     MacroCell: Name=\UART_1:BUART:txn\, Mode=(D-Register) @ [UDB=(3,1)][LB=1][MC=0]
+        Total # of inputs        : 7
+        Total # of product terms : 5
+        List of special equations: 
+            Clock  = (Net_42) => Global
+            Clock Enable: True
+        Main Equation            : 5 pterms
+        (
+              \UART_1:BUART:txn\ * \UART_1:BUART:tx_state_1\ * 
+              !\UART_1:BUART:tx_bitclk\
+            + \UART_1:BUART:txn\ * \UART_1:BUART:tx_state_2\
+            + !\UART_1:BUART:tx_state_1\ * \UART_1:BUART:tx_state_0\ * 
+              !\UART_1:BUART:tx_shift_out\ * !\UART_1:BUART:tx_state_2\
+            + !\UART_1:BUART:tx_state_1\ * \UART_1:BUART:tx_state_0\ * 
+              !\UART_1:BUART:tx_state_2\ * !\UART_1:BUART:tx_bitclk\
+            + \UART_1:BUART:tx_state_1\ * !\UART_1:BUART:tx_state_0\ * 
+              !\UART_1:BUART:tx_shift_out\ * !\UART_1:BUART:tx_state_2\ * 
+              !\UART_1:BUART:tx_counter_dp\ * \UART_1:BUART:tx_bitclk\
+        );
+        Output = \UART_1:BUART:txn\ (fanout=2)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+UDB [UDB=(3,2)] contents:
+LAB@[UDB=(3,2)][LB=0] #macrocells=1, #inputs=6, #pterms=4
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]:     MacroCell: Name=\UART_1:BUART:tx_state_2\, Mode=(T-Register) @ [UDB=(3,2)][LB=0][MC=1]
+        Total # of inputs        : 6
+        Total # of product terms : 4
+        List of special equations: 
+            Clock  = (Net_42) => Global
+            Clock Enable: True
+        Main Equation            : 4 pterms
+        (
+              !\UART_1:BUART:tx_state_1\ * !\UART_1:BUART:tx_state_0\ * 
+              \UART_1:BUART:tx_bitclk_enable_pre\ * \UART_1:BUART:tx_state_2\
+            + \UART_1:BUART:tx_state_1\ * \UART_1:BUART:tx_state_0\ * 
+              \UART_1:BUART:tx_bitclk_enable_pre\ * \UART_1:BUART:tx_state_2\
+            + \UART_1:BUART:tx_state_1\ * \UART_1:BUART:tx_state_0\ * 
+              !\UART_1:BUART:tx_state_2\ * \UART_1:BUART:tx_bitclk\
+            + \UART_1:BUART:tx_state_1\ * !\UART_1:BUART:tx_state_2\ * 
+              \UART_1:BUART:tx_counter_dp\ * \UART_1:BUART:tx_bitclk\
+        );
+        Output = \UART_1:BUART:tx_state_2\ (fanout=7)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+LAB@[UDB=(3,2)][LB=1] #macrocells=1, #inputs=4, #pterms=2
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]:     MacroCell: Name=\UART_1:BUART:tx_bitclk\, Mode=(D-Register) @ [UDB=(3,2)][LB=1][MC=3]
+        Total # of inputs        : 4
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_42) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        !(
+              !\UART_1:BUART:tx_state_1\ * !\UART_1:BUART:tx_state_0\ * 
+              \UART_1:BUART:tx_state_2\
+            + !\UART_1:BUART:tx_bitclk_enable_pre\
+        );
+        Output = \UART_1:BUART:tx_bitclk\ (fanout=4)
         Properties               : 
         {
         }
@@ -3663,8 +3708,29 @@ controlcell: Name =\LED_Driver:Com_Driver:Sync:ctrl_reg\
     }
     Clock Enable: True
 
+UDB [UDB=(3,3)] is empty.
 UDB [UDB=(3,4)] is empty.
-UDB [UDB=(3,5)] is empty.
+UDB [UDB=(3,5)] contents:
+LAB@[UDB=(3,5)][LB=0] #macrocells=1, #inputs=0, #pterms=0
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]: (empty)
+    [McSlotId=2]:     MacroCell: Name=__ONE__, Mode=(Combinatorial) @ [UDB=(3,5)][LB=0][MC=2]
+        Total # of inputs        : 0
+        Total # of product terms : 0
+            Clock Enable: True
+        Main Equation            : 0 pterms
+        !(
+            0
+        );
+        Output = __ONE__ (fanout=7)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]: (empty)
+}
+
 Intr container @ [IntrContainer=(0)]: 
   Intr@ [IntrContainer=(0)][IntrId=(0)] 
     interrupt: Name =TimerInterrupt
@@ -3766,7 +3832,8 @@ Pin : Name = Com(3)
     {
     }
 
-[IoId=2]: 
+Port 1 contains the following IO cells:
+[IoId=7]: 
 Pin : Name = SsrOut(0)
     Attributes:
         In Group/Port: True
@@ -3802,52 +3869,6 @@ Pin : Name = SsrOut(0)
     PORT MAP (
         pa_out => SsrOut(0)__PA ,
         pad => SsrOut(0)_PAD );
-    Properties:
-    {
-    }
-
-Port 1 contains the following IO cells:
-[IoId=7]: 
-Pin : Name = Pin_0(0)
-    Attributes:
-        Alias: sen0
-        In Group/Port: True
-        In Sync Option: SYNC
-        Out Sync Option: NOSYNC
-        Interrupt generated: False
-        Interrupt mode: NONE
-        Drive mode: RES_PULL_UP
-        VTrip: CMOS
-        Slew: FAST
-        Input Sync needed: True
-        Output Sync needed: False
-        SC shield enabled: False
-        POR State: ANY
-        LCD Mode: COMMON
-        Register Mode: RegComb
-        CaSense Mode: NEITHER
-        Treat as pin: True
-        Is OE Registered: False
-        Uses Analog: False
-        Can contain Digital: True
-        Is SIO: False
-        SIO Output Buf: NONREGULATED
-        SIO Input Buf: SINGLE_ENDED
-        SIO HiFreq: LOW
-        SIO Hyst: DISABLED
-        SIO Vtrip: MULTIPLIER_0_5
-        SIO Multiplier Index: 0
-        SIO RefSel: VCC_IO
-        Required Capabilitites: DIGITAL, ROUTABLE
-        Initial Value: 1
-        IO Voltage: 0
-    PORT MAP (
-        pa_out => Pin_0(0)__PA ,
-        oe => \OneWire:tmpOE__bufoe_1_net_0\ ,
-        fb => \OneWire:Net_807\ ,
-        input => \OneWire:Net_1111\ ,
-        annotation => Net_1019 ,
-        pad => Pin_0(0)_PAD );
     Properties:
     {
     }
@@ -3896,8 +3917,8 @@ Pin : Name = PinLED(0)
     {
     }
 
-[IoId=7]: 
-Pin : Name = Pin_2(0)
+[IoId=4]: 
+Pin : Name = PinVdd(0)
     Attributes:
         In Group/Port: True
         In Sync Option: AUTO
@@ -3930,9 +3951,95 @@ Pin : Name = Pin_2(0)
         Initial Value: 0
         IO Voltage: 0
     PORT MAP (
-        pa_out => Pin_2(0)__PA ,
+        pa_out => PinVdd(0)__PA ,
+        analog_term => Net_2222 ,
+        pad => PinVdd(0)_PAD );
+    Properties:
+    {
+    }
+
+[IoId=5]: 
+Pin : Name = Pin_0(0)
+    Attributes:
+        Alias: sen0
+        In Group/Port: True
+        In Sync Option: SYNC
+        Out Sync Option: NOSYNC
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: RES_PULL_UP
+        VTrip: CMOS
+        Slew: FAST
+        Input Sync needed: True
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilitites: DIGITAL, ROUTABLE
+        Initial Value: 1
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => Pin_0(0)__PA ,
+        oe => \OneWire:tmpOE__bufoe_1_net_0\ ,
+        fb => \OneWire:Net_807\ ,
+        input => \OneWire:Net_1111\ ,
+        annotation => Net_1019 ,
+        pad => Pin_0(0)_PAD );
+    Properties:
+    {
+    }
+
+[IoId=6]: 
+Pin : Name = PinGnd(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_ANALOG
+        VTrip: EITHER
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: True
+        Can contain Digital: False
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilitites: ANALOG
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => PinGnd(0)__PA ,
         analog_term => Net_2215 ,
-        pad => Pin_2(0)_PAD );
+        pad => PinGnd(0)_PAD );
     Properties:
     {
     }
@@ -4490,6 +4597,17 @@ Vref group 0:
             ignoresleep = 0
             name = "Vssa (GND)"
         }
+    Vref Block @ F(Vref,8): 
+    vrefcell: Name =vRef_2
+        PORT MAP (
+            vout => Net_2222 );
+        Properties:
+        {
+            autoenable = 1
+            guid = "5499430B-31B8-44f1-80BA-E089CFA660C7"
+            ignoresleep = 0
+            name = "Vddd"
+        }
 LPF group 0: empty
 SAR ADC group 0: empty
 </CYPRESSTAG>
@@ -4502,12 +4620,13 @@ Port Configuration report
 Port | Pin | Fixed |      Type |       Drive Mode |      Name | Connections
 -----+-----+-------+-----------+------------------+-----------+----------------------------------------------------------------------------------
    0 |   0 |     * |      NONE |         CMOS_OUT |    Com(3) | In(Net_2204_3)
-     |   2 |       |      NONE |         CMOS_OUT | SsrOut(0) | 
 -----+-----+-------+-----------+------------------+-----------+----------------------------------------------------------------------------------
-   1 |   7 |     * |      NONE |      RES_PULL_UP |  Pin_0(0) | FB(\OneWire:Net_807\), In(\OneWire:Net_1111\), OE(\OneWire:tmpOE__bufoe_1_net_0\)
+   1 |   7 |     * |      NONE |         CMOS_OUT | SsrOut(0) | 
 -----+-----+-------+-----------+------------------+-----------+----------------------------------------------------------------------------------
    2 |   1 |     * |      NONE |         CMOS_OUT | PinLED(0) | In(LED)
-     |   7 |     * |      NONE |      HI_Z_ANALOG |  Pin_2(0) | Analog(Net_2215)
+     |   4 |     * |      NONE |      HI_Z_ANALOG | PinVdd(0) | Analog(Net_2222)
+     |   5 |     * |      NONE |      RES_PULL_UP |  Pin_0(0) | FB(\OneWire:Net_807\), In(\OneWire:Net_1111\), OE(\OneWire:tmpOE__bufoe_1_net_0\)
+     |   6 |     * |      NONE |      HI_Z_ANALOG | PinGnd(0) | Analog(Net_2215)
 -----+-----+-------+-----------+------------------+-----------+----------------------------------------------------------------------------------
    3 |   3 |       |      NONE |         CMOS_OUT |  Tx_06(0) | In(Net_39)
 -----+-----+-------+-----------+------------------+-----------+----------------------------------------------------------------------------------
@@ -4528,31 +4647,31 @@ Port | Pin | Fixed |      Type |       Drive Mode |      Name | Connections
 </CYPRESSTAG>
 </CYPRESSTAG>
 Digital component placer commit/Report: Elapsed time ==> 0s.015ms
-Digital Placement phase: Elapsed time ==> 3s.851ms
+Digital Placement phase: Elapsed time ==> 3s.909ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 Routing successful.
-Digital Routing phase: Elapsed time ==> 5s.890ms
+Digital Routing phase: Elapsed time ==> 6s.125ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream and API generation">
-Bitstream and API generation phase: Elapsed time ==> 0s.715ms
+Bitstream and API generation phase: Elapsed time ==> 0s.770ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream verification">
 Bitstream verification phase: Elapsed time ==> 0s.131ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
 Timing report is in WineCoolerTake2_timing.html.
-Static timing analysis phase: Elapsed time ==> 1s.271ms
+Static timing analysis phase: Elapsed time ==> 1s.401ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
 Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.651ms
+Design database save phase: Elapsed time ==> 0s.647ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 14s.525ms
+cydsfit: Elapsed time ==> 15s.145ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 14s.657ms
-API generation phase: Elapsed time ==> 4s.703ms
-Dependency generation phase: Elapsed time ==> 0s.046ms
-Cleanup phase: Elapsed time ==> 0s.015ms
+Fitter phase: Elapsed time ==> 15s.272ms
+API generation phase: Elapsed time ==> 4s.878ms
+Dependency generation phase: Elapsed time ==> 0s.052ms
+Cleanup phase: Elapsed time ==> 0s.000ms
