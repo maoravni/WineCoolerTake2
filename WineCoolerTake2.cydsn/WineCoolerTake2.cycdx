@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <blockRegMap version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://cypress.com/xsd/cyblockregmap cyblockregmap.xsd" xmlns="http://cypress.com/xsd/cyblockregmap">
-  <block name="R_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="Clock_ReportTimer" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="PWR_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="DS18B20" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="GND_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="FreqDiv_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="Pin_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="cy_boot" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="vRef_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Seg" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="LED_Driver" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
     <block name="VirtualMux_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
@@ -33,7 +24,15 @@
     <block name="or_internal" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="ZeroTerminal_7" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   </block>
-  <block name="cy_constant_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="R_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="GND_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="PWR_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="vRef_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Clock1kHz" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="cy_boot" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="TimerInterrupt" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Pin_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="SsrOut" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Com" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="PinLED" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="D_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
@@ -60,20 +59,20 @@
       <block name="ZeroTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
       <register name="OneWire_TimerDelay_COUNTER" address="0x40006406" bitWidth="16" desc="UDB.A0 - Current Down Counter Value" hidden="false" />
       <register name="OneWire_TimerDelay_PERIOD" address="0x40006426" bitWidth="16" desc="UDB.D0 - Assigned Period" hidden="false" />
-      <register name="OneWire_TimerDelay_Control_Reg" address="0x40006575" bitWidth="8" desc="UDB Control Register - Assigned Control Register Value" hidden="false">
+      <register name="OneWire_TimerDelay_Control_Reg" address="0x40006474" bitWidth="8" desc="UDB Control Register - Assigned Control Register Value" hidden="false">
         <field name="CTRL_ENABLE" from="7" to="7" access="RW" resetVal="" desc="Enable the Timer" />
         <field name="CTRL_CMODE" from="6" to="5" access="RW" resetVal="" desc="Capture Mode" />
         <field name="CTRL_TEN" from="4" to="4" access="RW" resetVal="" desc="Trigger Enable Bit" />
         <field name="CTRL_TMODE" from="3" to="2" access="RW" resetVal="" desc="Trigger Mode" />
         <field name="CTRL_IC" from="1" to="0" access="RW" resetVal="" desc="Interrupt Count" />
       </register>
-      <register name="OneWire_TimerDelay_STATUS_MASK" address="0x40006587" bitWidth="8" desc="UDB Status bits Interrupt Mask Enable Register" hidden="false">
+      <register name="OneWire_TimerDelay_STATUS_MASK" address="0x40006487" bitWidth="8" desc="UDB Status bits Interrupt Mask Enable Register" hidden="false">
         <field name="TIMER_STS_TC" from="0" to="0" access="R" resetVal="" desc="Enables the Interrupt on TC" />
         <field name="TIMER_STS_CAPT" from="1" to="1" access="R" resetVal="" desc="Enables the Interrupt on Capture" />
         <field name="TIMER_STS_FIFO_FULL" from="2" to="2" access="R" resetVal="" desc="FIFO Full Status " />
         <field name="TIMER_STS_FIFO_NEMPTY" from="3" to="3" access="R" resetVal="" desc="FIFO Empty status " />
       </register>
-      <register name="OneWire_TimerDelay_STATUS_AUX_CTRL" address="0x40006597" bitWidth="8" desc="UDB Auxilliary Control Register" hidden="false">
+      <register name="OneWire_TimerDelay_STATUS_AUX_CTRL" address="0x40006497" bitWidth="8" desc="UDB Auxilliary Control Register" hidden="false">
         <field name="FIFO0_CLR" from="0" to="0" access="RW" resetVal="" desc="FIFO0 clear">
           <value name="E_FIFO_CLR_0" value="0" desc="Normal FIFO operation" />
           <value name="E_FIFO_CLR_1" value="1" desc="Clear FIFO state" />
@@ -101,7 +100,7 @@
       </register>
     </block>
     <block name="OneWire_ControlReg_SEL" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
-      <register name="OneWire_ControlReg_SEL_CONTROL_REG" address="0x40006476" bitWidth="8" desc="" hidden="false" />
+      <register name="OneWire_ControlReg_SEL_CONTROL_REG" address="0x40006574" bitWidth="8" desc="" hidden="false" />
     </block>
     <block name="clock_delay" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="OneWire_ControlReg_DRV" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
@@ -109,9 +108,9 @@
     </block>
     <block name="bufoe_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="OneWire_StatusReg_BUS" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
-      <register name="OneWire_StatusReg_BUS_STATUS_REG" address="0x40006566" bitWidth="8" desc="" hidden="false" />
-      <register name="OneWire_StatusReg_BUS_MASK_REG" address="0x40006586" bitWidth="8" desc="" hidden="false" />
-      <register name="OneWire_StatusReg_BUS_STATUS_AUX_CTL_REG" address="0x40006596" bitWidth="8" desc="" hidden="false">
+      <register name="OneWire_StatusReg_BUS_STATUS_REG" address="0x40006567" bitWidth="8" desc="" hidden="false" />
+      <register name="OneWire_StatusReg_BUS_MASK_REG" address="0x40006587" bitWidth="8" desc="" hidden="false" />
+      <register name="OneWire_StatusReg_BUS_STATUS_AUX_CTL_REG" address="0x40006597" bitWidth="8" desc="" hidden="false">
         <field name="FIFO0" from="5" to="5" access="RW" resetVal="" desc="FIFO0 clear">
           <value name="ENABLED" value="1" desc="Enable counter" />
           <value name="DISABLED" value="0" desc="Disable counter" />
@@ -142,7 +141,7 @@
     <block name="VirtualMux_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="VirtualMux_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="OneWire_Trigger" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
-      <register name="OneWire_Trigger_CONTROL_REG" address="0x40006474" bitWidth="8" desc="" hidden="false" />
+      <register name="OneWire_Trigger_CONTROL_REG" address="0x40006477" bitWidth="8" desc="" hidden="false" />
     </block>
     <block name="VirtualMux_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="cy_constant_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
@@ -150,19 +149,19 @@
   <block name="Pin_0" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="PWR_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Clock_UART" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="isr_Timer" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="DS18B20" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="cy_constant_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="UART_1" BASE="0x0" SIZE="0x0" desc="UART" visible="true" hidden="false">
     <block name="BUART" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="VirtualMux_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="TXInternalInterrupt" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <register name="TX_UART_1_TX_DATA" address="0x40006445" bitWidth="8" desc="TX Data Register" hidden="false" />
     <register name="TX_UART_1_TX_STATUS" address="0x40006466" bitWidth="8" desc="TX status register" hidden="false">
       <field name="UART_1_TX_STS_COMPLETE" from="0" to="0" access="R" resetVal="" desc="" />
       <field name="UART_1_TX_STS_FIFO_EMPTY" from="1" to="1" access="R" resetVal="" desc="" />
       <field name="UART_1_TX_STS_FIFO_FULL" from="2" to="2" access="R" resetVal="" desc="" />
       <field name="UART_1_TX_STS_FIFO_NOT_FULL" from="3" to="3" access="R" resetVal="" desc="" />
     </register>
+    <register name="TX_UART_1_TX_DATA" address="0x40006546" bitWidth="8" desc="TX Data Register" hidden="false" />
   </block>
   <block name="Tx_06" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
 </blockRegMap>

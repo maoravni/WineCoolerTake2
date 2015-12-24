@@ -26,17 +26,39 @@
 #endif
 */
 
-static volatile CYBIT flag_Timer = 0 ; //semaphore   
-CY_ISR(isr_Timer) // ISR Timer to report temperature at regular interval
+static const int PwmPeriodArray[] = {200, 0, 800, 1000};
+
+#define M_MIN_SETPOINT 10
+#define M_MAX_SETPOINT 20
+#define M_MIN_TEMPERATURE 0
+#define M_MAX_TEMPERATURE 50
+
+#define M_SLEEP_INTERVAL 3*60
+#define M_MAX_COOL_INTERVAL 2*60
+
+#define M_STATE_SLEEP 0
+#define M_STATE_MONITOR 1
+#define M_STATE_COOLING 2
+#define M_STATE_ERROR 3
+
+
+int secCounter = 0;
+int msecCounter = 0;
+
+void TimerInterrupt_Interrupt_InterruptCallback()
 {
-    flag_Timer = 1;
+    ++msecCounter;
+    if (msecCounter >= 1000)
+    {
+        ++secCounter;
+        msecCounter = 0;
+    }
 }
+
 
 //===========================================
 // Function prototypes
 //===========================================
-
-void ReportTemperature (void); // convert temperature code to deg C and send to UART
 
 #define M_BRIGHTNESS 10
 
@@ -50,6 +72,8 @@ void Initialize(void)
     UART_1_PutString("Temperature sensor Maxim DS18B20:\r\n");
     
     OneWire_Start();
+    OneWire_SendTemperatureRequest();
+
     LED_Driver_Start();
     
     LED_Driver_SetBrightness(M_BRIGHTNESS, 0);
@@ -57,11 +81,14 @@ void Initialize(void)
     LED_Driver_SetBrightness(M_BRIGHTNESS, 2);
     LED_Driver_SetBrightness(M_BRIGHTNESS, 3);
 
-    isr_Timer_StartEx(isr_Timer);
+    Clock1kHz_Start();
+
+    TimerInterrupt_Start();
+    
+    
 }
-
-
-float temperature;
+float g_temperature;
+float g_setpoint = 16;
 
 #define M_FILTER_COEFF (1.0/10.0)
 
@@ -70,75 +97,85 @@ float lowPassFilter(float newVal, float prevVal)
     return M_FILTER_COEFF * newVal + (1 - M_FILTER_COEFF) * prevVal;
 }
 
-void main()
+int monitorState = M_STATE_SLEEP;
+
+void readAndDisplayTemperature()
+{
+        if (OneWire_DataReady) // DS18 completed temperature measurement - begin read dataa
+    	{   
+            OneWire_ReadTemperature();
+            g_temperature = lowPassFilter(OneWire_GetTemperatureAsFloat(0), g_temperature);
+            LED_Driver_Write7SegNumberDec((int)(g_temperature*100), 0, 4, 0);
+            LED_Driver_PutDecimalPoint(1, 1);
+            OneWire_SendTemperatureRequest();
+        }    
+    if (msecCounter < PwmPeriodArray[monitorState])
+        LED_Driver_PutDecimalPoint(1, 3);
+    else
+        LED_Driver_PutDecimalPoint(0, 3);
+        
+}
+
+int main()
 {
 
     Initialize();
     
-    flag_Timer = 1; // force first measument instantly
-    
-    LED_Driver_WriteString7Seg("Err", 0);
-    CyDelay(1000);
-    OneWire_SendTemperatureRequest(); //                                        
     for(;;) 
     { 
-        if (OneWire_DataReady) // DS18 completed temperature measurement - begin read dataa
-    	{   
-            OneWire_ReadTemperature();
-            temperature = lowPassFilter(OneWire_GetTemperatureAsFloat(0), temperature);
-            LED_Driver_Write7SegNumberDec((int)(temperature*100), 0, 4, 0);
-            LED_Driver_PutDecimalPoint(1, 1);
-            OneWire_SendTemperatureRequest();
-        }    
+        readAndDisplayTemperature();
         
+        if (g_temperature < M_MIN_TEMPERATURE || g_temperature > M_MAX_TEMPERATURE)
+        {
+            monitorState = M_STATE_ERROR;
+            SsrOut_Write(0);
+        }
+
+        switch (monitorState)
+        {
+            case M_STATE_SLEEP:
+            {
+                if (secCounter >= M_SLEEP_INTERVAL)
+                {
+                    monitorState = M_STATE_MONITOR;
+                }
+                break;
+            }
+            case M_STATE_MONITOR:
+            {
+                if (g_temperature > (g_setpoint))
+                {
+                    monitorState = M_STATE_COOLING;
+                    secCounter = 0;
+                    SsrOut_Write(1);
+                }
+                break;
+            }
+            // קירורww
+            case M_STATE_COOLING:
+            {
+                if (/*temperature <= g_setpoint || */secCounter >= M_MAX_COOL_INTERVAL)
+                {
+                    monitorState = M_STATE_SLEEP;
+                    secCounter = 0;
+                    SsrOut_Write(0);
+                }
+                break;
+            }
+            case M_STATE_ERROR:
+            {
+                if (g_temperature > M_MIN_SETPOINT && g_temperature < M_MAX_TEMPERATURE)
+                {
+                    monitorState = M_STATE_SLEEP;
+                    secCounter = 0;
+                }
+                break;
+            }
+        }
     }   
-
-} //main
-
-
-
-
-//==============================================================================
-// Convert temperature code to degC and 
-// Send result to Terminal using UART
-//==============================================================================
-
-void ReportTemperature(void) 
-{
-    char strMsg[80]={};         // output UART buffer
-    char buf[8];                // temp buffer
-    static uint32 counter = 0;  // sample counter
     
-    counter++; 
-   
-/*
-    //example using GetTemperatureAsFloat() function
-    sprintf(strMsg,"%lu\t %.2f\t %.2f\t %.2f\t %.2f\t %.2f\t %.2f\t %.2f\t %.2f\r\n", 
-                        counter,
-                        OneWire_GetTemperatureAsFloat(0),   
-                        OneWire_GetTemperatureAsFloat(1),
-                        OneWire_GetTemperatureAsFloat(2),
-                        OneWire_GetTemperatureAsFloat(3)    
-                        OneWire_GetTemperatureAsFloat(4),   
-                        OneWire_GetTemperatureAsFloat(4),
-                        OneWire_GetTemperatureAsFloat(6),
-                        OneWire_GetTemperatureAsFloat(7)    //25675 ticks
-            );
-*/
-             
- //   strcat(strMsg, itoa10(counter, buf)); strcat(strMsg, ",");
-    strcat(strMsg, OneWire_GetTemperatureAsString(0)); strcat(strMsg, ",");
-    strcat(strMsg, OneWire_GetTemperatureAsString(1)); strcat(strMsg, ",");
-    strcat(strMsg, OneWire_GetTemperatureAsString(2)); strcat(strMsg, ",");
-    strcat(strMsg, OneWire_GetTemperatureAsString(3)); strcat(strMsg, ","); 
-    strcat(strMsg, OneWire_GetTemperatureAsString(4)); strcat(strMsg, ",");
-    strcat(strMsg, OneWire_GetTemperatureAsString(5)); strcat(strMsg, ",");
-    strcat(strMsg, OneWire_GetTemperatureAsString(6)); strcat(strMsg, ",");
-    strcat(strMsg, OneWire_GetTemperatureAsString(7)); strcat(strMsg, "\r\n"); //1910 ticks
-
-       
-    UART_1_PutString(strMsg);      
-}
+    return 0;
+} //main
 
 
 

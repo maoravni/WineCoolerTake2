@@ -79,7 +79,7 @@
         <register>
           <name>OneWire_TimerDelay_Control_Reg</name>
           <description>UDB Control Register - Assigned Control Register Value</description>
-          <addressOffset>0x40006575</addressOffset>
+          <addressOffset>0x40006474</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -125,7 +125,7 @@
         <register>
           <name>OneWire_TimerDelay_STATUS_MASK</name>
           <description>UDB Status bits Interrupt Mask Enable Register</description>
-          <addressOffset>0x40006587</addressOffset>
+          <addressOffset>0x40006487</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -164,7 +164,7 @@
         <register>
           <name>OneWire_TimerDelay_STATUS_AUX_CTRL</name>
           <description>UDB Auxilliary Control Register</description>
-          <addressOffset>0x40006597</addressOffset>
+          <addressOffset>0x40006497</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -291,7 +291,7 @@
     <peripheral>
       <name>OneWire_ControlReg_SEL</name>
       <description>No description available</description>
-      <baseAddress>0x40006476</baseAddress>
+      <baseAddress>0x40006574</baseAddress>
       <addressBlock>
         <offset>0</offset>
         <size>0x0</size>
@@ -333,7 +333,7 @@
     <peripheral>
       <name>OneWire_StatusReg_BUS</name>
       <description>No description available</description>
-      <baseAddress>0x40006566</baseAddress>
+      <baseAddress>0x40006567</baseAddress>
       <addressBlock>
         <offset>0</offset>
         <size>0x0</size>
@@ -488,7 +488,7 @@
     <peripheral>
       <name>OneWire_Trigger</name>
       <description>No description available</description>
-      <baseAddress>0x40006474</baseAddress>
+      <baseAddress>0x40006477</baseAddress>
       <addressBlock>
         <offset>0</offset>
         <size>0x0</size>
@@ -516,15 +516,6 @@
         <usage>registers</usage>
       </addressBlock>
       <registers>
-        <register>
-          <name>TX_UART_1_TX_DATA</name>
-          <description>TX Data Register</description>
-          <addressOffset>0x40006445</addressOffset>
-          <size>8</size>
-          <access>read-write</access>
-          <resetValue>0</resetValue>
-          <resetMask>0</resetMask>
-        </register>
         <register>
           <name>TX_UART_1_TX_STATUS</name>
           <description>TX status register</description>
@@ -563,6 +554,15 @@
               <access>read-only</access>
             </field>
           </fields>
+        </register>
+        <register>
+          <name>TX_UART_1_TX_DATA</name>
+          <description>TX Data Register</description>
+          <addressOffset>0x40006546</addressOffset>
+          <size>8</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <resetMask>0</resetMask>
         </register>
       </registers>
     </peripheral>
