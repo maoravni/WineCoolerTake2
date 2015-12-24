@@ -82,23 +82,13 @@ void main()
     OneWire_SendTemperatureRequest(); //                                        
     for(;;) 
     { 
-        
-//        if(flag_Timer) //read DS18B20 on timer, intervals >1sec
-//    	{   
-//            flag_Timer = 0;
-//            OneWire_SendTemperatureRequest(); //                                        
-//        }
-        
         if (OneWire_DataReady) // DS18 completed temperature measurement - begin read dataa
     	{   
-            OneWire_ReadTemperature(); // 
-//            ReportTemperature();
-            //temperature = OneWire_GetTemperatureAsFloat(0);
+            OneWire_ReadTemperature();
             temperature = lowPassFilter(OneWire_GetTemperatureAsFloat(0), temperature);
             LED_Driver_Write7SegNumberDec((int)(temperature*100), 0, 4, 0);
             LED_Driver_PutDecimalPoint(1, 1);
-            //UART_1_WriteTxData(temperature);
-            OneWire_SendTemperatureRequest(); //                                        
+            OneWire_SendTemperatureRequest();
         }    
         
     }   
