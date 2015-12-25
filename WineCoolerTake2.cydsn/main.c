@@ -88,7 +88,7 @@ void Initialize(void)
     
 }
 float g_temperature;
-float g_setpoint = 16;
+float g_setpoint = 14;
 
 #define M_FILTER_COEFF (1.0/10.0)
 

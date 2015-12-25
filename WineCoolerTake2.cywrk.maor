@@ -423,6 +423,34 @@
 <VisibleNodeIds>
 <v>WineCoolerTake2</v>
 <v>WineCoolerTake2\WineCoolerTake2</v>
+<v>WineCoolerTake2\WineCoolerTake2\CortexM3</v>
+<v>WineCoolerTake2\WineCoolerTake2\CortexM3\ARM_GCC_493</v>
+<v>WineCoolerTake2\WineCoolerTake2\CortexM3\ARM_GCC_493\Debug</v>
+<v>WineCoolerTake2\WineCoolerTake2\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
+<v>WineCoolerTake2\WineCoolerTake2\CortexM3\ARM_GCC_493\Debug\Listing Files\Clock_UART.lst</v>
+<v>WineCoolerTake2\WineCoolerTake2\CortexM3\ARM_GCC_493\Debug\Listing Files\Clock1kHz.lst</v>
+<v>WineCoolerTake2\WineCoolerTake2\CortexM3\ARM_GCC_493\Debug\Listing Files\Cm3Start.lst</v>
+<v>WineCoolerTake2\WineCoolerTake2\CortexM3\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>WineCoolerTake2\WineCoolerTake2\CortexM3\ARM_GCC_493\Debug\Listing Files\CyDmac.lst</v>
+<v>WineCoolerTake2\WineCoolerTake2\CortexM3\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>WineCoolerTake2\WineCoolerTake2\CortexM3\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
+<v>WineCoolerTake2\WineCoolerTake2\CortexM3\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
+<v>WineCoolerTake2\WineCoolerTake2\CortexM3\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
+<v>WineCoolerTake2\WineCoolerTake2\CortexM3\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
+<v>WineCoolerTake2\WineCoolerTake2\CortexM3\ARM_GCC_493\Debug\Listing Files\CySpc.lst</v>
+<v>WineCoolerTake2\WineCoolerTake2\CortexM3\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
+<v>WineCoolerTake2\WineCoolerTake2\CortexM3\ARM_GCC_493\Debug\Listing Files\LED_Driver.lst</v>
+<v>WineCoolerTake2\WineCoolerTake2\CortexM3\ARM_GCC_493\Debug\Listing Files\LED_Driver_ClkInternal.lst</v>
+<v>WineCoolerTake2\WineCoolerTake2\CortexM3\ARM_GCC_493\Debug\Listing Files\LED_Driver_Com_Driver.lst</v>
+<v>WineCoolerTake2\WineCoolerTake2\CortexM3\ARM_GCC_493\Debug\Listing Files\LED_Driver_Com_Driver_PM.lst</v>
+<v>WineCoolerTake2\WineCoolerTake2\CortexM3\ARM_GCC_493\Debug\Listing Files\LED_Driver_DMA_BC_dma.lst</v>
+<v>WineCoolerTake2\WineCoolerTake2\CortexM3\ARM_GCC_493\Debug\Listing Files\LED_Driver_DMA_Com_dma.lst</v>
+<v>WineCoolerTake2\WineCoolerTake2\CortexM3\ARM_GCC_493\Debug\Listing Files\LED_Driver_DMA_Seg_dma.lst</v>
+<v>WineCoolerTake2\WineCoolerTake2\CortexM3\ARM_GCC_493\Debug\Listing Files\LED_Driver_PM.lst</v>
+<v>WineCoolerTake2\WineCoolerTake2\CortexM3\ARM_GCC_493\Debug\Listing Files\LED_Driver_Seg_Driver_L.lst</v>
+<v>WineCoolerTake2\WineCoolerTake2\CortexM3\ARM_GCC_493\Debug\Listing Files\LED_Driver_Seg_Driver_L_PM.lst</v>
+<v>WineCoolerTake2\WineCoolerTake2\CortexM3\ARM_GCC_493\Debug\Listing Files\main.lst</v>
+<v>WineCoolerTake2\WineCoolerTake2\CortexM3\ARM_GCC_493\Debug\Listing Files\OneWire.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -493,7 +521,13 @@
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
-<OpenDocs />
+<OpenDocs>
+<name v=".\WineCoolerTake2.cydsn\main.c" />
+<name v=".\WineCoolerTake2.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\WineCoolerTake2.cydsn\Generated_Source\PSoC5\TimerInterrupt.h" />
+<name v=".\WineCoolerTake2.cydsn\Generated_Source\PSoC5\TimerInterrupt.c" />
+<name v=".\WineCoolerTake2.cydsn\WineCoolerTake2.cydwr" />
+</OpenDocs>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
