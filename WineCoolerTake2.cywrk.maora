@@ -156,6 +156,8 @@
 <v>WineCoolerTake2\WineCoolerTake2\Generated_Source\PSoC5\cy_boot\Cm3Iar.icf</v>
 <v>WineCoolerTake2\WineCoolerTake2\Generated_Source\PSoC5\cy_boot\Cm3RealView.scat</v>
 <v>WineCoolerTake2\WineCoolerTake2\Generated_Source\PSoC5\cy_boot\Cm3Start.c</v>
+<v>WineCoolerTake2\WineCoolerTake2\Generated_Source\PSoC5\cy_boot\cmsis_armcc.h</v>
+<v>WineCoolerTake2\WineCoolerTake2\Generated_Source\PSoC5\cy_boot\cmsis_gcc.h</v>
 <v>WineCoolerTake2\WineCoolerTake2\Generated_Source\PSoC5\cy_boot\core_cm3.h</v>
 <v>WineCoolerTake2\WineCoolerTake2\Generated_Source\PSoC5\cy_boot\core_cm3_psoc5.h</v>
 <v>WineCoolerTake2\WineCoolerTake2\Generated_Source\PSoC5\cy_boot\core_cmFunc.h</v>
@@ -486,7 +488,7 @@
 <v>WineCoolerTake2\WineCoolerTake2\PSoC 5 Architecture TRM</v>
 <v>WineCoolerTake2\WineCoolerTake2\CY8C58LP Family Datasheet</v>
 <v>WineCoolerTake2\WineCoolerTake2\System Reference Guides</v>
-<v>WineCoolerTake2\WineCoolerTake2\System Reference Guides\cy_boot_v5_30</v>
+<v>WineCoolerTake2\WineCoolerTake2\System Reference Guides\cy_boot_v5_40</v>
 <v>WineCoolerTake2\WineCoolerTake2\Connector20_v1_0.pdf</v>
 <v>WineCoolerTake2\WineCoolerTake2\cy_clock_v2_20</v>
 <v>WineCoolerTake2\WineCoolerTake2\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
@@ -494,8 +496,8 @@
 <v>WineCoolerTake2\WineCoolerTake2\cy_isr_v1_70.pdf</v>
 <v>WineCoolerTake2\WineCoolerTake2\cy_pins_v2_20</v>
 <v>WineCoolerTake2\WineCoolerTake2\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>WineCoolerTake2\WineCoolerTake2\cy_vref_v1_60</v>
-<v>WineCoolerTake2\WineCoolerTake2\cy_vref_v1_60\cy_vref_v1_60.pdf</v>
+<v>WineCoolerTake2\WineCoolerTake2\cy_vref_v1_70</v>
+<v>WineCoolerTake2\WineCoolerTake2\cy_vref_v1_70\cy_vref_v1_70.pdf</v>
 <v>WineCoolerTake2\WineCoolerTake2\DS18x8_A_00.pdf</v>
 <v>WineCoolerTake2\WineCoolerTake2\Gnd_v1_0.pdf</v>
 <v>WineCoolerTake2\WineCoolerTake2\LED_Driver_v1_10.pdf</v>
@@ -511,7 +513,7 @@
 <v>WineCoolerTake2\WineCoolerTake2\PSoC 5 Architecture TRM</v>
 <v>WineCoolerTake2\WineCoolerTake2\CY8C58LP Family Datasheet</v>
 <v>WineCoolerTake2\WineCoolerTake2\System Reference Guides</v>
-<v>WineCoolerTake2\WineCoolerTake2\System Reference Guides\cy_boot_v5_30</v>
+<v>WineCoolerTake2\WineCoolerTake2\System Reference Guides\cy_boot_v5_40</v>
 <v>WineCoolerTake2\WineCoolerTake2\Connector20_v1_0.pdf</v>
 <v>WineCoolerTake2\WineCoolerTake2\cy_clock_v2_20</v>
 <v>WineCoolerTake2\WineCoolerTake2\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
@@ -519,8 +521,8 @@
 <v>WineCoolerTake2\WineCoolerTake2\cy_isr_v1_70.pdf</v>
 <v>WineCoolerTake2\WineCoolerTake2\cy_pins_v2_20</v>
 <v>WineCoolerTake2\WineCoolerTake2\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>WineCoolerTake2\WineCoolerTake2\cy_vref_v1_60</v>
-<v>WineCoolerTake2\WineCoolerTake2\cy_vref_v1_60\cy_vref_v1_60.pdf</v>
+<v>WineCoolerTake2\WineCoolerTake2\cy_vref_v1_70</v>
+<v>WineCoolerTake2\WineCoolerTake2\cy_vref_v1_70\cy_vref_v1_70.pdf</v>
 <v>WineCoolerTake2\WineCoolerTake2\DS18x8_A_00.pdf</v>
 <v>WineCoolerTake2\WineCoolerTake2\Gnd_v1_0.pdf</v>
 <v>WineCoolerTake2\WineCoolerTake2\LED_Driver_v1_10.pdf</v>
@@ -537,7 +539,9 @@
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
-<OpenDocs />
+<OpenDocs>
+<name v=".\WineCoolerTake2.cydsn\main.c" />
+</OpenDocs>
 <config v="Release" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
