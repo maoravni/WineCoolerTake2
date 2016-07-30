@@ -25,7 +25,7 @@
       <Tool Name="postbuild" Command="" Options="" />
     </Toolchain>
   </Toolchains>
-  <Project Name="WineCoolerTake2" Path="C:\Users\maora\Documents\GitHub\WineCoolerTake2\WineCoolerTake2.cydsn" Version="5.20" Type="Normal">
+  <Project Name="WineCoolerTake2" Path="C:\Users\maora\Documents\GitHub\WineCoolerTake2\WineCoolerTake2.cydsn" Version="5.30" Type="Normal">
     <CMSIS_SVD_File>WineCoolerTake2.svd</CMSIS_SVD_File>
     <Datasheet />
     <LinkerFiles>
