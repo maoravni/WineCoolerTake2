@@ -88,9 +88,9 @@ void Initialize(void)
     
 }
 float g_temperature;
-float g_setpoint = 14;
+float g_setpoint = 15;
 
-#define M_FILTER_COEFF (1.0/10.0)
+#define M_FILTER_COEFF (1.0/100.0)
 
 float lowPassFilter(float newVal, float prevVal)
 {
