@@ -9,7 +9,7 @@
     <peripheral>
       <name>LED_Driver_Seg_Driver_L</name>
       <description>No description available</description>
-      <baseAddress>0x40006477</baseAddress>
+      <baseAddress>0x40006476</baseAddress>
       <addressBlock>
         <offset>0</offset>
         <size>0x0</size>
@@ -30,7 +30,7 @@
     <peripheral>
       <name>LED_Driver_Com_Driver</name>
       <description>No description available</description>
-      <baseAddress>0x40006476</baseAddress>
+      <baseAddress>0x40006472</baseAddress>
       <addressBlock>
         <offset>0</offset>
         <size>0x0</size>
@@ -291,7 +291,7 @@
     <peripheral>
       <name>OneWire_ControlReg_SEL</name>
       <description>No description available</description>
-      <baseAddress>0x4000647D</baseAddress>
+      <baseAddress>0x40006473</baseAddress>
       <addressBlock>
         <offset>0</offset>
         <size>0x0</size>
@@ -312,7 +312,7 @@
     <peripheral>
       <name>OneWire_ControlReg_DRV</name>
       <description>No description available</description>
-      <baseAddress>0x40006577</baseAddress>
+      <baseAddress>0x4000647D</baseAddress>
       <addressBlock>
         <offset>0</offset>
         <size>0x0</size>
@@ -333,7 +333,7 @@
     <peripheral>
       <name>OneWire_StatusReg_BUS</name>
       <description>No description available</description>
-      <baseAddress>0x40006564</baseAddress>
+      <baseAddress>0x40006467</baseAddress>
       <addressBlock>
         <offset>0</offset>
         <size>0x0</size>
@@ -488,7 +488,7 @@
     <peripheral>
       <name>OneWire_Trigger</name>
       <description>No description available</description>
-      <baseAddress>0x40006574</baseAddress>
+      <baseAddress>0x40006470</baseAddress>
       <addressBlock>
         <offset>0</offset>
         <size>0x0</size>
@@ -519,7 +519,7 @@
         <register>
           <name>TX_UART_1_TX_DATA</name>
           <description>TX Data Register</description>
-          <addressOffset>0x40006547</addressOffset>
+          <addressOffset>0x40006443</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -528,7 +528,7 @@
         <register>
           <name>TX_UART_1_TX_STATUS</name>
           <description>TX status register</description>
-          <addressOffset>0x40006567</addressOffset>
+          <addressOffset>0x40006463</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>

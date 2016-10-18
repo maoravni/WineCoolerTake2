@@ -44,6 +44,11 @@ static const int PwmPeriodArray[] = {200, 0, 800, 1000};
 
 int secCounter = 0;
 int msecCounter = 0;
+int activationDelayCounter = 0;
+float g_activationDelays[10] = {0,0,0,0,0,0,0,0,0,0};
+float g_activationAverage = 0;
+int g_numberOfActivations = 0;
+int g_activationAverageIndex = 0;
 
 void TimerInterrupt_Interrupt_InterruptCallback()
 {
@@ -51,6 +56,7 @@ void TimerInterrupt_Interrupt_InterruptCallback()
     if (msecCounter >= 1000)
     {
         ++secCounter;
+        ++activationDelayCounter;
         msecCounter = 0;
     }
 }
@@ -98,6 +104,8 @@ float lowPassFilter(float newVal, float prevVal)
 }
 
 int monitorState = M_STATE_SLEEP;
+int displayState = 0;
+
 
 void readAndDisplayTemperature()
 {
@@ -113,6 +121,8 @@ void readAndDisplayTemperature()
         }
         else
             g_temperature = lowPassFilter(OneWire_GetTemperatureAsFloat(0), g_temperature);
+            
+        
         LED_Driver_Write7SegNumberDec((int)(g_temperature*100), 0, 4, 0);
         LED_Driver_PutDecimalPoint(1, 1);
         OneWire_SendTemperatureRequest();
@@ -156,6 +166,21 @@ int main()
                     monitorState = M_STATE_COOLING;
                     secCounter = 0;
                     SsrOut_Write(1);
+                    
+                    g_activationDelays[g_activationAverageIndex] = (float)activationDelayCounter/(float)60;
+                    activationDelayCounter = 0;
+                    g_activationAverageIndex = (g_activationAverageIndex + 1)%10;
+                    ++g_numberOfActivations;
+                    if (g_numberOfActivations > 10)
+                        g_numberOfActivations = 10;
+                    
+                    g_activationAverage = 0;
+                    int i;
+                    for (i = 0; i < g_numberOfActivations; ++i)
+                    {
+                        g_activationAverage += g_activationDelays[i];
+                    }
+                    g_activationAverage = g_activationAverage/(float)g_numberOfActivations;
                 }
                 break;
             }

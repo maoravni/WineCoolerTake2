@@ -6,15 +6,15 @@
     <Toolchain Name="ARM GCC Generic" Selected="True">
       <Tool Name="prebuild" Command="" Options="" />
       <Tool Name="assembler" Command="arm-none-eabi-as.exe" Options="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -alh=${OutputDir}/${CompileFile}.lst -g" />
-      <Tool Name="compiler" Command="arm-none-eabi-gcc.exe" Options="-mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D TimerInterrupt_INTERRUPT_INTERRUPT_CALLBACK -Wall -ffunction-sections -O0 -ffat-lto-objects" />
-      <Tool Name="linker" Command="arm-none-eabi-gcc.exe" Options="-mcpu=cortex-m3 -mthumb -g -ffunction-sections -O0 -L Generated_Source\PSoC5 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -Wl,--gc-sections" />
+      <Tool Name="compiler" Command="arm-none-eabi-gcc.exe" Options="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D TimerInterrupt_INTERRUPT_INTERRUPT_CALLBACK -Wall -ffunction-sections -O0 -ffat-lto-objects" />
+      <Tool Name="linker" Command="arm-none-eabi-gcc.exe" Options="-mcpu=cortex-m3 -mthumb -g -ffunction-sections -O0 -ffat-lto-objects -L Generated_Source\PSoC5 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T C:\Users\maor\Documents\GitHub\WineCoolerTake2\WineCoolerTake2.cydsn\Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -Wl,--gc-sections" />
       <Tool Name="postbuild" Command="" Options="" />
     </Toolchain>
     <Toolchain Name="ARM MDK Generic" Selected="False">
       <Tool Name="prebuild" Command="" Options="" />
       <Tool Name="assembler" Command="armasm.exe" Options="--cpu=Cortex-M3 --diag_style=gnu --thumb -i. -iGenerated_Source\PSoC5 -g --list=${OutputDir}/${CompileFile}.lst" />
-      <Tool Name="compiler" Command="armcc.exe" Options="--cpu=Cortex-M3 --diag_style=gnu --diag_suppress=951 -I. -IGenerated_Source\PSoC5 --list --signed_chars -g -D DEBUG -O0 --split_sections" />
-      <Tool Name="linker" Command="armlink.exe" Options="--cpu=Cortex-M3 --diag_style=gnu --no_startup --library_type=microlib --map --list ${OutputDir}/${ProjectShortName}.map --scatter Generated_Source\PSoC5\Cm3RealView.scat" />
+      <Tool Name="compiler" Command="armcc.exe" Options="--cpu=Cortex-M3 --diag_style=gnu -I. -IGenerated_Source\PSoC5 --list --signed_chars -g -D DEBUG -O0 --split_sections" />
+      <Tool Name="linker" Command="armlink.exe" Options="--cpu=Cortex-M3 --diag_style=gnu --no_startup --library_type=microlib --map --list ${OutputDir}/${ProjectShortName}.map --scatter C:\Users\maor\Documents\GitHub\WineCoolerTake2\WineCoolerTake2.cydsn\Generated_Source\PSoC5\Cm3RealView.scat" />
       <Tool Name="postbuild" Command="" Options="" />
     </Toolchain>
     <Toolchain Name="ARM IAR Generic" Selected="False">
@@ -25,7 +25,7 @@
       <Tool Name="postbuild" Command="" Options="" />
     </Toolchain>
   </Toolchains>
-  <Project Name="WineCoolerTake2" Path="C:\Users\maor\Documents\GitHub\WineCoolerTake2\WineCoolerTake2.cydsn" Version="5.20" Type="Normal">
+  <Project Name="WineCoolerTake2" Path="C:\Users\maor\Documents\GitHub\WineCoolerTake2\WineCoolerTake2.cydsn" Version="5.50" Type="Normal">
     <CMSIS_SVD_File>WineCoolerTake2.svd</CMSIS_SVD_File>
     <Datasheet />
     <LinkerFiles>
@@ -34,122 +34,132 @@
       <LinkerFile Toolchain="ARM IAR Generic">.\Generated_Source\PSoC5\Cm3Iar.icf</LinkerFile>
     </LinkerFiles>
     <Folders>
-      <Folder BuildType="BUILD" Path="C:\Users\maor\Documents\GitHub\WineCoolerTake2\WineCoolerTake2.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Users\maor\Documents\GitHub\WineCoolerTake2\WineCoolerTake2.cydsn">
         <Files Root="C:\Users\maor\Documents\GitHub\WineCoolerTake2\WineCoolerTake2.cydsn">
-          <File BuildType="BUILD" Toolchain="">.\main.c</File>
+          <File BuildType="BUILD" Toolchain="">main.c</File>
+          <File BuildType="UNKNOWN" Toolchain="">.project</File>
+          <File BuildType="UNKNOWN" Toolchain="">.cproject</File>
         </Files>
       </Folder>
-      <Folder BuildType="BUILD" Path="C:\Users\maor\Documents\GitHub\WineCoolerTake2\WineCoolerTake2.cydsn\DS18x8\API">
+      <Folder BuildType="STRICT" Path="C:\Users\maor\Documents\GitHub\WineCoolerTake2\WineCoolerTake2.cydsn\DS18x8\API">
         <Files Root="C:\Users\maor\Documents\GitHub\WineCoolerTake2\WineCoolerTake2.cydsn">
-          <File BuildType="BUILD" Toolchain="">.\DS18x8\API\DS18x8.c</File>
-          <File BuildType="BUILD" Toolchain="">.\DS18x8\API\DS18x8.h</File>
+          <File BuildType="BUILD" Toolchain="">DS18x8\API\DS18x8.c</File>
+          <File BuildType="BUILD" Toolchain="">DS18x8\API\DS18x8.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\maor\Documents\GitHub\WineCoolerTake2\WineCoolerTake2.cydsn\Generated_Source\PSoC5">
         <Files Root="C:\Users\maor\Documents\GitHub\WineCoolerTake2\WineCoolerTake2.cydsn">
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cyfitter_cfg.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cyfitter_cfg.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cymetadata.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cydevice.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cydevicegnu.inc</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cydevicerv.inc</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cydeviceiar.inc</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cydevice_trm.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cydevicegnu_trm.inc</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cydevicerv_trm.inc</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cydeviceiar_trm.inc</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cyfittergnu.inc</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cyfitterrv.inc</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cyfitteriar.inc</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cyfitter.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cydisabledsheets.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OneWire.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OneWire.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_0_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_0.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_0.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\PinLED_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\PinLED.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\PinLED.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_1.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_1.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_1_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_1_INT.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_1_BOOT.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Clock_UART.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Clock_UART.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OneWire_ControlReg_DRV.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OneWire_ControlReg_DRV.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OneWire_ControlReg_DRV_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OneWire_StatusReg_BUS.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OneWire_StatusReg_BUS.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OneWire_TimerDelay.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OneWire_TimerDelay.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OneWire_TimerDelay_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OneWire_ControlReg_SEL.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OneWire_ControlReg_SEL.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OneWire_ControlReg_SEL_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OneWire_clock_delay.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OneWire_clock_delay.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OneWire_Trigger.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OneWire_Trigger.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OneWire_Trigger_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OneWire_isr_DataReady.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\OneWire_isr_DataReady.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Cm3Start.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\core_cm3_psoc5.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\core_cm3.h</File>
-          <File BuildType="BUILD" Toolchain="ARM GCC Generic">.\Generated_Source\PSoC5\CyBootAsmGnu.s</File>
-          <File BuildType="BUILD" Toolchain="ARM MDK Generic">.\Generated_Source\PSoC5\CyBootAsmRv.s</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CyDmac.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CyDmac.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CyFlash.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CyFlash.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CyLib.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CyLib.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cypins.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cyPm.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cyPm.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CySpc.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CySpc.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cytypes.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cyutils.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\core_cmFunc.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\core_cmInstr.h</File>
-          <File BuildType="BUILD" Toolchain="ARM IAR Generic">.\Generated_Source\PSoC5\CyBootAsmIar.s</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\project.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\LED_Driver.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\LED_Driver.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\LED_Driver_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\LED_Driver_ClkInternal.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\LED_Driver_ClkInternal.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\LED_Driver_Seg_Driver_L.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\LED_Driver_Seg_Driver_L.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\LED_Driver_Seg_Driver_L_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\LED_Driver_Com_Driver.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\LED_Driver_Com_Driver.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\LED_Driver_Com_Driver_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\LED_Driver_DMA_Com_dma.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\LED_Driver_DMA_Com_dma.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\LED_Driver_DMA_Seg_dma.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\LED_Driver_DMA_Seg_dma.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\LED_Driver_DMA_BC_dma.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\LED_Driver_DMA_BC_dma.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Com_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Seg_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\SsrOut_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\SsrOut.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\SsrOut.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\TimerInterrupt.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\TimerInterrupt.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Clock1kHz.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Clock1kHz.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\PinVdd_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\PinVdd.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\PinVdd.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\PinGnd_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\PinGnd.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\PinGnd.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cyfitter_cfg.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cyfitter_cfg.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cymetadata.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cydevice.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cydevicegnu.inc</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cydevicerv.inc</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cydeviceiar.inc</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cydevice_trm.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cydevicegnu_trm.inc</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cydevicerv_trm.inc</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cydeviceiar_trm.inc</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cyfittergnu.inc</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cyfitterrv.inc</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cyfitteriar.inc</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cyfitter.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cydisabledsheets.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\OneWire.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\OneWire.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_0_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_0.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_0.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Com_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PinLED_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PinLED.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PinLED.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\UART_1.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\UART_1.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\UART_1_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\UART_1_INT.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\UART_1_BOOT.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_UART.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_UART.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PinVdd_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PinVdd.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PinVdd.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Seg_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED_Driver.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED_Driver.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED_Driver_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PinGnd_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PinGnd.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PinGnd.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\SsrOut_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\SsrOut.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\SsrOut.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\TimerInterrupt.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\TimerInterrupt.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock1kHz.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock1kHz.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\OneWire_ControlReg_DRV.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\OneWire_ControlReg_DRV.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\OneWire_ControlReg_DRV_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\OneWire_StatusReg_BUS.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\OneWire_StatusReg_BUS.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\OneWire_TimerDelay.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\OneWire_TimerDelay.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\OneWire_TimerDelay_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\OneWire_ControlReg_SEL.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\OneWire_ControlReg_SEL.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\OneWire_ControlReg_SEL_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\OneWire_clock_delay.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\OneWire_clock_delay.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\OneWire_Trigger.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\OneWire_Trigger.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\OneWire_Trigger_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\OneWire_isr_DataReady.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\OneWire_isr_DataReady.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED_Driver_ClkInternal.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED_Driver_ClkInternal.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED_Driver_Seg_Driver_L.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED_Driver_Seg_Driver_L.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED_Driver_Seg_Driver_L_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED_Driver_Com_Driver.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED_Driver_Com_Driver.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED_Driver_Com_Driver_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED_Driver_DMA_Com_dma.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED_Driver_DMA_Com_dma.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED_Driver_DMA_Seg_dma.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED_Driver_DMA_Seg_dma.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED_Driver_DMA_BC_dma.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LED_Driver_DMA_BC_dma.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cycodeshareimport.ld</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cycodeshareexport.ld</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cycodeshareimport.scat</File>
+          <File BuildType="BUILD" Toolchain="ARM GCC Generic">Generated_Source\PSoC5\cm3gcc.ld</File>
+          <File BuildType="BUILD" Toolchain="ARM MDK Generic">Generated_Source\PSoC5\Cm3RealView.scat</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Cm3Start.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\core_cm3_psoc5.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\core_cm3.h</File>
+          <File BuildType="BUILD" Toolchain="ARM GCC Generic">Generated_Source\PSoC5\CyBootAsmGnu.s</File>
+          <File BuildType="BUILD" Toolchain="ARM MDK Generic">Generated_Source\PSoC5\CyBootAsmRv.s</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\CyDmac.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\CyDmac.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\CyFlash.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\CyFlash.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\CyLib.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\CyLib.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cypins.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cyPm.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cyPm.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\CySpc.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\CySpc.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cytypes.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cyutils.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\core_cmFunc.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\core_cmInstr.h</File>
+          <File BuildType="BUILD" Toolchain="ARM IAR Generic">Generated_Source\PSoC5\Cm3Iar.icf</File>
+          <File BuildType="BUILD" Toolchain="ARM IAR Generic">Generated_Source\PSoC5\CyBootAsmIar.s</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cmsis_armcc.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cmsis_gcc.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\project.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\maor\Documents\GitHub\WineCoolerTake2\WineCoolerTake2.cydsn\Export\ARM_GCC_Generic">
@@ -185,7 +195,16 @@
       <Folder BuildType="EXCLUDE" Path=".\CortexM0">
         <Files Root="C:\Users\maor\Documents\GitHub\WineCoolerTake2\WineCoolerTake2.cydsn" />
       </Folder>
+      <Folder BuildType="EXCLUDE" Path=".\CortexM0p">
+        <Files Root="C:\Users\maor\Documents\GitHub\WineCoolerTake2\WineCoolerTake2.cydsn" />
+      </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM3">
+        <Files Root="C:\Users\maor\Documents\GitHub\WineCoolerTake2\WineCoolerTake2.cydsn" />
+      </Folder>
+      <Folder BuildType="EXCLUDE" Path=".\CortexM4">
+        <Files Root="C:\Users\maor\Documents\GitHub\WineCoolerTake2\WineCoolerTake2.cydsn" />
+      </Folder>
+      <Folder BuildType="EXCLUDE" Path=".\CortexM7">
         <Files Root="C:\Users\maor\Documents\GitHub\WineCoolerTake2\WineCoolerTake2.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\Generated_Source\PSoC3">

@@ -19,7 +19,7 @@
 
 #define GetBit(Value, BitNo) ((Value >> BitNo) & (uint8)0x01)   //macro to read a bit,  returns 0 or 1
 
-uint8 BusPresence; // 8-bit bus state: 1-sensor present, 0-sensor read failure
+volatile uint8 BusPresence; // 8-bit bus state: 1-sensor present, 0-sensor read failure
   
 
 //==============================================================================
