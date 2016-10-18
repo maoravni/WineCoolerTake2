@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Last Modified Date & Time: 07/24/2016 21:32:26
 
 WineCoolerTake2: TopDesign.cysch
@@ -21,5 +22,33 @@ Last Modified Date & Time: 10/16/2016 00:29:00
 
 WineCoolerTake2: WineCoolerTake2.cydwr
 	cy_boot [v5.40] to [v5.50]
+=======
+Last Modified Date & Time: 07/31/2016 00:41:53
+
+WineCoolerTake2: TopDesign.cysch
+	Pin_0 [v2.10] to [v2.20]
+	Com [v2.10] to [v2.20]
+	PinLED [v2.10] to [v2.20]
+	Tx_06 [v2.10] to [v2.20]
+	PinVdd [v2.10] to [v2.20]
+	Seg [v2.10] to [v2.20]
+	PinGnd [v2.10] to [v2.20]
+	SsrOut [v2.10] to [v2.20]
+
+WineCoolerTake2: WineCoolerTake2.cydwr
+	cy_boot [v5.20] to [v5.30]
+	LIN_Dynamic [v3.20] to [v3.30]
+
+
+Last Modified Date & Time: 07/31/2016 00:58:56
+
+WineCoolerTake2: TopDesign.cysch
+	vRef_2 [v1.60] to [v1.70]
+	vRef_1 [v1.60] to [v1.70]
+
+WineCoolerTake2: WineCoolerTake2.cydwr
+	cy_boot [v5.30] to [v5.40]
+	LIN_Dynamic [v3.30] to [v3.40]
+>>>>>>> origin/master
 
 
