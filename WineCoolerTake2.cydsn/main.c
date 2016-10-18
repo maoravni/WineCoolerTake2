@@ -42,9 +42,9 @@ static const int PwmPeriodArray[] = {200, 0, 800, 1000};
 #define M_STATE_ERROR 3
 
 
-int secCounter = 0;
-int msecCounter = 0;
-int activationDelayCounter = 0;
+volatile int secCounter = 0;
+volatile int msecCounter = 0;
+volatile int activationDelayCounter = 0;
 float g_activationDelays[10] = {0,0,0,0,0,0,0,0,0,0};
 float g_activationAverage = 0;
 int g_numberOfActivations = 0;
